@@ -8,7 +8,7 @@ $links: #56819F;
 $linksHov: #F58220;
 $greyFont: #979797;
 
-/*buttons*/
+/* Buttons and notifications */
 $themeButton: #F58220;
 $themeButtonHov: #FFA200;
 $greyButton: #979797;
@@ -18,14 +18,13 @@ $lightPositiveNot: #96CC9B;
 $negativeNot: #DE5252;
 $lightNegativeNot: #EC7171;
 
-
-/* Font sizes */
+/* ---- FONTS ---- */
+/* Font sizes*/
 $paragraphFontSize: 16px;
 $sectionHeaderFontSize: 18px;
 $pageHeaderFontSize: 20px;
 $largeLinkFontSize: 18px;
 $smallLinkFontSize: 16px;
-
-/* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+/* Font styles */
+$brandFont: "Open Sans";
+$paragraphFont: "Open Sans";

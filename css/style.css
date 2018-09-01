@@ -1,7 +1,8 @@
 /* ---- COLORS ---- */
-/*buttons*/
-/* Font sizes */
-/* Fonts */
+/* Buttons and notifications */
+/* ---- FONTS ---- */
+/* Font sizes*/
+/* Font styles */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,10 +338,153 @@ template {
 /* Components */
 /* Sections */
 /* Pages / Views */
-/* ---- STYLE ----*/
+/* ---- TEXTS AND LINKS ----*/
 h2 {
+  font-family: "Open Sans";
   font-size: 20px;
   color: #979797;
-  transform: uppercase;
+  text-transform: uppercase;
+  font-weight: normal;
 }
+
+h3 {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #979797;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+}
+
+a {
+  color: #56819F;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F58220;
+}
+
+.largeLink {
+  font-size: 18px;
+}
+
+.smallLink {
+  font-size: 16px;
+}
+
+/* ---- BUTTONS ---- */
+.btn {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: white;
+  padding: 8px;
+  margin: 2px;
+  border-width: 0;
+  border-radius: 5px;
+}
+
+.greyBtn {
+  background: #979797;
+}
+
+.greyBtn:hover {
+  background: #bababa;
+}
+
+.themeBtn {
+  background: #F58220;
+}
+
+.themeBtn:hover {
+  background: #FFA200;
+}
+
+.disabledBtn {
+  background: #E3E3E3;
+}
+
+/* ---- CHECKBOX LIST ---- */
+.checkboxLine {
+  display: inline-block;
+  line-height: 25px;
+  position: relative;
+  margin: 2px;
+  padding: 8px 10px 8px 35px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkboxLine:hover {
+  background: #F5F5F2;
+}
+
+.checkboxLine input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkboxLine input:checked ~ .checkmark {
+  background-color: #04AE00;
+  border-color: #04AE00;
+}
+
+.checkboxLine input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxLine .checkmark {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  height: 14px;
+  width: 14px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bababa;
+}
+
+.checkboxLine .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxLine .checkmark:hover {
+  background-color: #96CC9B;
+}
+
+/* ---- COLOR TABS ---- */
+/* ---- TABLE WITH LINK ---- */
+/* ---- INPUTS ---- */
+/* ---- DATE PERIOD ---- */
+/* ---- NOTIFICATIONS ---- */
+/* ---- LIST WITH ON DIGIT ----*/
+/* ---- LARGE TABLE WITH SORTING ---- */
+/* ---- SLIDER ---- */
+/* ---- PAGINATION ----*/
+/* ---- MESSENGER ----*/
+/* ---- TOP MENU BUTTONS ----*/
 /*# sourceMappingURL=style.css.map */
