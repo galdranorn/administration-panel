@@ -1,9 +1,30 @@
-/* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+/* ---- COLORS ---- */
+$black: #000000;
+$grey2: #E3E3E3;
+$grey1: #F5F5F2;
+$green: #04AE00;
+$alert: #ff0000;
+$links: #56819F;
+$linksHov: #F58220;
+$greyFont: #979797;
+
+/*buttons*/
+$themeButton: #F58220;
+$themeButtonHov: #FFA200;
+$greyButton: #979797;
+$greyButtonHov: #bababa;
+$positiveNot: #74B67A;
+$lightPositiveNot: #96CC9B;
+$negativeNot: #DE5252;
+$lightNegativeNot: #EC7171;
+
 
 /* Font sizes */
-$paragraph-font-size: 16px;
+$paragraphFontSize: 16px;
+$sectionHeaderFontSize: 18px;
+$pageHeaderFontSize: 20px;
+$largeLinkFontSize: 18px;
+$smallLinkFontSize: 16px;
 
 /* Fonts */
 $brand-font: "Open Sans", Helvetica, Arial;

@@ -10,3 +10,11 @@
 
 /* Pages / Views */
 //import "pages/registration";
+
+/* ---- STYLE ----*/
+//page header
+h2 {
+    font-size: $pageHeaderFontSize;
+    color: $greyFont;
+    transform: uppercase;
+}
