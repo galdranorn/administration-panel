@@ -9,28 +9,124 @@
     </head>
 
     <body>
-        <h2>H2 - Page header</h2>
-        <h3>H3 - Section header</h3>
-        <p>P - paragraph - Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget.</p>
-        <a class="largeLink" href="#">large link</a><br>
-        <a class="smallLink" href="#">small link</a><br>
+        <h1>Style guide</h1>
+        <section>
+            <h4>-------- Text and links --------</h4> 
+            <h2>H2 - Page header</h2>
+            <h3>H3 - Section header</h3>
+            <p>P - paragraph - Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget.</p>
+            <a class="largeLink" href="#">large link</a><br>
+            <a class="smallLink" href="#">small link</a><br>
         <br>
-        <button class="btn greyBtn">Grey button</button><br>
-        <button class="btn themeBtn">Theme button</button><br>
-        <button class="btn disabledBtn">Disabled button</button><br>
-        <br>
-        <label class="checkboxLine">check box
-                <input type="checkbox">
-                <span class="checkmark"></span>
-        </label><br>
-        <label class="checkboxLine">marked check box                    <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-        </label>
+        </section>
+        
+        <section>
+            <h4>-------- Buttons --------</h4>
+            <button class="btn greyBtn">Grey button</button><br>
+            <button class="btn themeBtn">Theme button</button><br>
+            <button class="btn disabledBtn">Disabled button</button><br>
+            <br>
+        </section>
 
-        <div class="positiveNotification">Positive notification</div>
-        <div class="negativeNotification">Negative notification</div>
-    
-                
+        <section>
+            <h4>-------- Checkbox --------</h4>
+            <label class="checkboxLine">check box
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+            </label><br>
+            <label class="checkboxLine">marked check box                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+            </label>
+        </section>
+
+        <section>
+            <h4>-------- Table with links --------</h4>
+            <table class="table tableWithLink">
+                <tbody>
+                <tr>
+                    <td class="tableText"><h3>Line header</h3></td>
+                    <td class="tableLink"><a class="smallLink" href="">link</a></td>
+                </tr>
+                <tr>
+                    <td class="tableText"><h3>Line header</h3></td>
+                    <td class="tableLink"><a class="smallLink" href="">link</a></td>
+                </tr>
+                </tbody>
+            </table><br>
+        </section>
+
+        <section>
+            <h4>-------- Table with digit --------</h4>
+            <table class="table tableWithDigit">
+                <tbody>
+                    <tr>
+                        <td class="tableText"><h3>Line header</h3></td>
+                        <td class="tableDigit"><p>123</p></td>
+                    </tr>
+                </tbody>
+            </table><br>
+        </section>
+
+        <section>
+            <h4>-------- Table with sorting --------</h4>
+            <table class="table tableWithSorting">
+                <thead>
+                    <tr>
+                        <td><button class="sortingBtn">Column name<i class="arrow down"></i></button></td>
+                        <td><button class="sortingBtn">Column name<i class="arrow down"></i></button></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tableText"><p>12345</p></td>
+                        <td class="tableText"><p>12345</p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableText"><p>12345</p></td>
+                        <td class="tableText"><p>12345</p></td>
+                    </tr>
+                </tbody>
+            </table><br>
+        </section>
+
+        <section>
+            <h4>-------- Color tabs --------</h4>
+            <div class="tabs">
+                    <button class="btn tabBtn activeTabBtn"><span class="dot"></span>color tab</button>
+                    <button class="btn tabBtn"><span class="dot"></span>color tab</button>
+                    <button class="btn tabBtn"><span class="dot"></span>color tab</button>
+            </div>
+            <br>
+        </section> 
+
+        <section>
+            <h4>-------- Inputs --------</h4>
+            <div class="boxInput">
+                <form class="inputForm">
+                    <div class="form-group formText">
+                        <textarea class="form-control" id="message" rows="6" placeholder="Text input"></textarea>
+                    </div>
+                    <div class="form-group formInput"> 
+                        <input type="text" class="form-control" id="input-name" placeholder="Placeholder">
+                    </div>
+                    <div class="form-group formInput">
+                        <i></i>
+                        <input type="password" class="form-control" id="input-password" placeholder="password">
+                    </div>
+                    <div class="form-group formInput incorrectPass">
+                            <i></i>
+                            <input type="password" class="form-control" id="input-password" placeholder="password">
+                    </div>	
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h4>-------- Notifications --------</h4>
+            <button class="btn positiveNotBtn">Positive notification</button><br>
+            <button class="btn negativeNotBtn">Negative notification</button>
+        </section>
+        
         
         
   <ul>

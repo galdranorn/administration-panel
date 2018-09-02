@@ -1,0 +1,42 @@
+/* ---- page header ---- */
+h2  {
+    font-family: $brandFont;
+    font-size: $pageHeaderFontSize; 
+    color: $greyFont;
+    text-transform: uppercase;
+    font-weight: normal;
+    }
+
+/* ---- section header ---- */
+h3  {
+    font-family: $brandFont;
+    font-size: $sectionHeaderFontSize;
+    color: $greyFont;
+    font-weight: bold;
+    }
+
+/* ---- paragraph ---- */
+p   {
+    font-family: $brandFont;
+    font-size: $paragraphFontSize;
+    color: $black;
+    font-weight: 300;
+    }
+
+/* ---- links ---- */
+a   {
+    color: $links;
+    font-family: $brandFont;
+    font-weight: 400;
+    text-decoration: none;
+        &:hover {
+            color: $linksHov; cursor: pointer;
+            }
+    }
+
+.largeLink {
+    font-size: $largeLinkFontSize
+    }
+.smallLink {
+    font-size: $smallLinkFontSize
+    }

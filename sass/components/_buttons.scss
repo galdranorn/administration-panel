@@ -1,0 +1,48 @@
+/* ---- general style for big button ---- */
+
+.btn    {font-size: 16px;
+        font-family: $brandFont;
+        font-weight: 300;
+        color: white;
+        padding: 8px;
+        margin: 2px;
+        border-width: 0;
+        border-radius: 5px;
+        &:hover{cursor: pointer;}}
+
+/* ---- colors and hovers for big buttons ----*/
+
+.greyBtn    {background: $greyButton;
+            &:hover {background: $greyButtonHov;}}
+.themeBtn    {background: $themeButton;
+                &:hover {background: $themeButtonHov;}}
+.disabledBtn    {background: $grey2;} 
+
+/* ---- small sorting button for table with sorting ----*/
+
+.sortingBtn {
+    line-height: 20px;
+    font-size: 12px;
+    font-family: $brandFont;
+    font-weight: bold;
+    color:$greyButtonHov;
+    background-color: white;
+    border-width: 0;
+    padding: 5px;
+    i {
+        display: inline-block;
+        padding: 3px;
+        margin: 5px 5px 0 10px;
+        transform: rotate(-135deg);
+        display: inline-block;
+        }
+    &:hover {
+        cursor: pointer;
+        background-color: $grey1;
+        color: black;
+        i {
+            border: solid  black;
+            border-width: 0 3px 3px 0;
+        }
+    }
+}

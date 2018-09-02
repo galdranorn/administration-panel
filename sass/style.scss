@@ -3,120 +3,134 @@
 @import "normalize";
 @import "layout";
 /* Components */
-//import "components/form_field";
-
+@import "components/fonts";
+@import "components/buttons";
+@import "components/checkbox";
 /* Sections */
 //import "section/registration_form";
 
 /* Pages / Views */
 //import "pages/registration";
 
-/* ---- TEXTS AND LINKS ----*/
-h2  {font-family: $brandFont;
-    font-size: $pageHeaderFontSize; 
-    color: $greyFont;
-    text-transform: uppercase;
-    font-weight: normal;}
-h3  {font-family: $brandFont;
-    font-size: $sectionHeaderFontSize;
-    color: $greyFont;
-    font-weight: bold;}
-p   {font-family: $brandFont;
-    font-size: $paragraphFontSize;
-    color: $black;
-    font-weight: 300;}
-a   {color: $links;
-    font-family: $brandFont;
-    font-weight: 400;
-    text-decoration: none;
-        &:hover {color: $linksHov;}}
-.largeLink{font-size: $largeLinkFontSize};
-.smallLink{font-size: $smallLinkFontSize};
-
-/* ---- BUTTONS ---- */
-
-.btn    {font-size: 16px;
-        font-family: $brandFont;
-        font-weight: 300;
-        color: white;
-        padding: 8px;
-        margin: 2px;
-        border-width: 0;
-        border-radius: 5px;}
-.greyBtn    {background: $greyButton;
-            &:hover {background: $greyButtonHov;}}
-.themeBtn    {background: $themeButton;
-                &:hover {background: $themeButtonHov;}}
-.disabledBtn    {background: $grey2;} 
-
-/* ---- CHECKBOX LIST ---- */
-
-.checkboxLine {
-    display: inline-block;
-    line-height: 25px;
+/* ---- COLOR TABS ---- */
+.tabBtn {
+    color: $greyButton;
+    border-radius: 2px;
     position: relative;
-    margin: 2px;
-    padding: 8px 10px 8px 35px;
-    cursor: pointer;
-    font-size: 12px;
-    font-family: $brandFont;
-    font-weight: 400;
-    user-select: none;
-    &:hover {
-        background: $grey1;
-    }
-    input {
-        //hide browser default checkbox
+    padding-left: 30px;
+    .dot {
+        content: "";
         position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        &:checked ~ .checkmark {
-            background-color: $green;
-            border-color: $green;
-            &:after {
-                display: block;
+        top: 10px;
+        left: 8px;
+        background: $links;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+    }
+}
+.activeTabBtn {
+    background-color: white;
+}
+
+/* ---- TABLES WITH LINK AND DIGIT ---- */
+
+.table {
+    border-collapse: collapse;
+    tr {
+        height: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+        td {
+            border-bottom: 1px solid $grey2;
+        }
+        .tableText {
+            width: 250px;
+            padding: 5px;
+        }
+    }
+}
+
+.tableWithLink, .tableWithSorting {
+    tbody{
+        tr {
+            &:hover {
+                background-color: $grey1;
+            }
+            td {
+                border-top: 1px solid $grey2;
+            }
+            .tableLink {
+                width: 60px;
+                text-align: center;
             }
         }
     }
-    .checkmark {
-        //create custom checkbox
-        position: absolute;
-        top: 13px;
-        left: 10px;
-        height: 14px;
-        width: 14px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: $greyButtonHov;
-        &:after {
-            content: "";
-            position: absolute;
-            display: none;
-            left: 5px;
-            top: 2px;
-            width: 3px;
-            height: 7px;
-            border: solid white;
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
-          }
-        &:hover {
-            background-color: $lightPositiveNot;
-        }
+}
+
+.tableWithDigit {
+    .tableDigit {
+        width: 50px;
     }
-  }
-
-/* ---- COLOR TABS ---- */
-
-/* ---- TABLE WITH LINK ---- */
+}
 
 /* ---- INPUTS ---- */
+
+.boxInput {
+    width: 200px;
+    padding: 10px;
+}
+.inputForm {
+    input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $grey2;
+    border-radius: 2px;
+    color: black;
+        &::placeholder {
+            color: $greyButtonHov;
+        }
+        &:hover {
+            cursor: pointer;
+            border: 1px solid $greyButton;
+        }
+    }
+    .formText {
+        font-size: 12px;
+        font-family: $brandFont;
+    }
+    .formInput {
+        font-size: 14px;
+        font-family: $brandFont;
+    }
+    .incorrectPass input {
+        border: 1px solid $alert;
+    }
+}
 
 /* ---- DATE PERIOD ---- */
 
 /* ---- NOTIFICATIONS ---- */
+.positiveNotBtn, .negativeNotBtn {
+    font-size: 12px;
+    border-radius: 0;
+}
 
-/* ---- LIST WITH ON DIGIT ----*/
+.positiveNotBtn {
+    background: $lightPositiveNot;
+    &:hover {
+        background: $positiveNot;
+    }
+}
+.negativeNotBtn {
+    font-size: 12px;
+    background: $lightNegativeNot;
+    &:hover {
+        background: $negativeNot;
+    }
+}
 
 /* ---- LARGE TABLE WITH SORTING ---- */
 
