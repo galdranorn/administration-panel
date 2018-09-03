@@ -1,0 +1,58 @@
+
+/* ---- INPUTS ---- */
+
+.boxInput {
+    width: 200px;
+    padding: 10px;
+}
+.inputForm {
+    input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $grey2;
+    border-radius: 2px;
+    color: black;
+        &::placeholder {
+            color: $greyButtonHov;
+        }
+        &:hover {
+            cursor: pointer;
+            border: 1px solid $greyButton;
+        }
+    }
+    .formText {
+        font-size: 12px;
+        font-family: $brandFont;
+    }
+    .formInput {
+        font-size: 14px;
+        font-family: $brandFont;
+    }
+    .incorrectPass input {
+        border: 1px solid $alert;
+    }
+}
+
+/* ---- DATE PERIOD ---- */
+
+.inputDateBox {
+    border: 1px solid $grey2;
+    border-radius: 2px;
+    width: 280px;
+    margin: 5px;
+    &:hover {
+        border: 1px solid $greyButton;
+    }
+    input {
+        font-family: $brandFont;
+        font-size: 10px;
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+        border-width: 0px;
+    }
+    i {
+        margin-top: 4px;
+    }
+}

@@ -1,0 +1,20 @@
+
+/* ---- NOTIFICATIONS ---- */
+.positiveNotBtn, .negativeNotBtn {
+    font-size: 12px;
+    border-radius: 0;
+}
+
+.positiveNotBtn {
+    background: $lightPositiveNot;
+    &:hover {
+        background: $positiveNot;
+    }
+}
+.negativeNotBtn {
+    font-size: 12px;
+    background: $lightNegativeNot;
+    &:hover {
+        background: $negativeNot;
+    }
+}

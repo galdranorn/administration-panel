@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Administration panel</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+
+    <body>
+<!-- TOP MENU -->
+        <header class="topMenu">
+            Here will be top menu            
+        </header>
+
+<!-- SIDE MENU -->
+        <section class="sideMenu">
+            <div class="containerMenu">
+                <div class="row">
+                    <div class="col-8 logo"><img src="images/logo.png" alt="logo"></div>
+                    <div class="col-4 hamburger"><a href="#"><i class="fa fa-bars"></i></a></div>
+                </div>
+                <div class="row menuLine">
+                    <div class="col-3 icon"><i class="far fa-star"></i></div>
+                    <div class="col-9 text"><a href="#">General</a></div>
+                </div>
+                <div class="row menuLine">
+                    <div class="col-3 icon"><i class="fas fa-info"></i></div>
+                    <div class="col-9 text"><a href="#">Details</a></div>
+                </div>
+                <div class="row menuLine">
+                    <div class="col-3 icon"><i class="fas fa-link"></i></div>
+                    <div class="col-9 text"><a href="#">Links</a></div>
+                </div>
+                <div class="row menuLine">
+                    <div class="col-3 icon"><i class="fas fa-stream"></i></div>
+                    <div class="col-9 text"><a href="#">Banners</a></div>
+                </div>
+                <div class="row menuLine">
+                    <div class="col-3 icon"><i class="far fa-user"></i></div>
+                    <div class="col-9 text"><a href="#">Personal data</a></div>
+                </div>
+                <div class="row menuLine">
+                    <div class="col-3 icon"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="col-9 text"><a href="#">Payout</a></div>
+                </div>
+                <div class="row menuLine">
+                    <div class="col-3 icon"><i class="fas fa-reply"></i></div>
+                    <div class="col-9 text"><a href="#">Postback</a></div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="yourManager">
+                    <h2>Your manager</h2>
+                    Here will be manager :-)
+                </div>
+            
+            </div>
+        </section>
+
+<!-- SECTION FOR CONTENTS STARTS -->
+        <div class="mainBox">
+            
+<!-- DASHBOARD -->
+            <section class="dashboard">
+
+                <!-- 1. general statistics -->
+                    <div class="smallBox generalStatistics">
+                        <h2>General statistics</h2><hr>
+
+                        <!-- 1.1. input date box -->
+                        <div class="inputDateBox">
+                            <div>
+                                <input type="date" id="start" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                                <span class ="separator">|</span>
+                                <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div> 
+                        <hr>
+
+                        <!-- 1.2. table with digits -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <table class="table tableWithDigit">
+                                        <tbody><tr>
+                                                <td class="tableText"><h3>Visit Signups</h3></td>
+                                                <td class="tableDigit"><p>124</p></td>
+                                            </tr><tr>
+                                                <td class="tableText"><h3>FTD</h3></td>
+                                                <td class="tableDigit"><p>445</p></td>
+                                        </tr></tbody>
+                                    </table>
+                                </div>
+                                <div class="col-6">
+                                    <table class="table tableWithDigit">
+                                        <tbody><tr>
+                                            <td class="tableText"><h3>Net deposit</h3></td>
+                                            <td class="tableDigit"><p>564</p></td>
+                                        </tr><tr>
+                                            <td class="tableText"><h3>Turn over</h3></td>
+                                            <td class="tableDigit"><p>432</p></td>
+                                        </tr></tbody>
+                                    </table>
+                                    <br><br>
+                                </div>
+                            </div>
+
+                            <!-- 1.3. earning chart -->
+                            <h3>Earnings chart</h3>
+                            <div class="tabs">
+                                <button class="btn tabBtn"><span class="dot signups"></span>Signups</button>
+                                <button class="btn tabBtn"><span class="dot FTD"></span>FTD</button>
+                                <button class="btn tabBtn activeTabBtn"><span class="dot earned"></span>Earned</button>
+                            </div>
+                            <div class="chart">
+                                <img src="images/chart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- 2. links -->
+                    <div class="smallBox links">
+...
+                    </div>
+                
+                </section>
+            </div>
+
+<!-- SECTION FOR CONTENTS FINISHES -->
+        </div>
+    </body>
+</html>

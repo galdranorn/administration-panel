@@ -1,0 +1,42 @@
+/* ---- TABLES WITH LINK AND DIGIT ---- */
+
+.table {
+    border-collapse: collapse;
+    tr {
+        height: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+        td {
+            border-bottom: 1px solid $grey2;
+        }
+        .tableText {
+            width: 250px;
+            padding: 5px;
+        }
+    }
+}
+
+.tableWithLink, .tableWithSorting {
+    tbody{
+        tr {
+            &:hover {
+                background-color: $grey1;
+            }
+            td {
+                border-top: 1px solid $grey2;
+            }
+            .tableLink {
+                width: 60px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.tableWithDigit {
+    .tableDigit {
+        width: 50px;
+    }
+}
+

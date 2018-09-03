@@ -335,11 +335,128 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GRID */
+.row::before, .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 5px;
+  text-align: justify;
+  /* THIS LINE SHOWS THE GRIDS */
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-offset-0 {
+  margin-left: 0;
+}
+
+.col-offset-1 {
+  margin-left: 8.33%;
+}
+
+.col-offset-2 {
+  margin-left: 16.66%;
+}
+
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+.col-offset-4 {
+  margin-left: 33.33%;
+}
+
+.col-offset-5 {
+  margin-left: 41.66%;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-offset-7 {
+  margin-left: 58.33%;
+}
+
+.col-offset-8 {
+  margin-left: 66.66%;
+}
+
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+.col-offset-10 {
+  margin-left: 83.33%;
+}
+
+.col-offset-11 {
+  margin-left: 91.66%;
+}
+
 /* Components */
 /* ---- page header ---- */
 h2 {
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 14px;
   color: #979797;
   text-transform: uppercase;
   font-weight: normal;
@@ -348,7 +465,7 @@ h2 {
 /* ---- section header ---- */
 h3 {
   font-family: "Open Sans";
-  font-size: 16px;
+  font-size: 14px;
   color: #979797;
   font-weight: bold;
 }
@@ -516,31 +633,6 @@ a:hover {
   background-color: #96CC9B;
 }
 
-/* Sections */
-/* Pages / Views */
-/* ---- COLOR TABS ---- */
-.tabBtn {
-  color: #979797;
-  border-radius: 2px;
-  position: relative;
-  padding-left: 30px;
-}
-
-.tabBtn .dot {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 8px;
-  background: #56819F;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-}
-
-.activeTabBtn {
-  background-color: white;
-}
-
 /* ---- TABLES WITH LINK AND DIGIT ---- */
 .table {
   border-collapse: collapse;
@@ -623,6 +715,53 @@ a:hover {
 }
 
 /* ---- DATE PERIOD ---- */
+.inputDateBox {
+  border: 1px solid #E3E3E3;
+  border-radius: 2px;
+  width: 280px;
+  margin: 5px;
+}
+
+.inputDateBox:hover {
+  border: 1px solid #979797;
+}
+
+.inputDateBox input {
+  font-family: "Open Sans";
+  font-size: 10px;
+  width: 100px;
+  padding: 5px;
+  margin: 5px;
+  border-width: 0px;
+}
+
+.inputDateBox i {
+  margin-top: 4px;
+}
+
+/* ---- COLOR TABS ---- */
+.tabBtn {
+  color: #979797;
+  border-radius: 2px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.tabBtn .dot {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  background: #56819F;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.activeTabBtn {
+  background-color: white;
+}
+
 /* ---- NOTIFICATIONS ---- */
 .positiveNotBtn, .negativeNotBtn {
   font-size: 12px;
@@ -644,6 +783,141 @@ a:hover {
 
 .negativeNotBtn:hover {
   background: #DE5252;
+}
+
+/* Sections */
+/* -------- SIDE MENU -------- */
+.sideMenu {
+  width: 180px;
+  height: 100%;
+  background: #191919;
+  position: fixed;
+}
+
+.sideMenu .hamburger {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.sideMenu .hamburger:hover a {
+  color: #F58220;
+}
+
+.sideMenu .hamburger a {
+  color: #979797;
+  font-size: 22px;
+}
+
+.sideMenu .menuLine {
+  height: 40px;
+  display: block;
+  position: relative;
+  padding-top: 5px;
+}
+
+.sideMenu .menuLine:hover {
+  background: #282828;
+  border-left: 4px solid #F58220;
+}
+
+.sideMenu .menuLine:hover .text a {
+  color: white;
+}
+
+.sideMenu .menuLine .icon {
+  text-align: center;
+  color: black;
+  display: inline-block;
+  height: 100%;
+}
+
+.sideMenu .menuLine .text {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  display: inline-block;
+  height: 100%;
+}
+
+.sideMenu .menuLine .text a {
+  color: #bababa;
+}
+
+.sideMenu hr {
+  border-color: #979797;
+}
+
+/* -------- TOP MENU --------- */
+.topMenu {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background: #E3E3E3;
+  text-align: right;
+}
+
+/* GLOBAL MAIN & SMALL BOX */
+.mainBox {
+  position: absolute;
+  top: 50px;
+  left: 180px;
+  width: calc(100% - 181px);
+  background: #F5F5F2;
+  padding: 20px;
+}
+
+.mainBox .smallBox {
+  position: relative;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 9px 2px #dedede;
+}
+
+.mainBox .smallBox h2 {
+  padding: 10px;
+}
+
+.mainBox .smallBox .container {
+  background: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+}
+
+.mainBox .smallBox .container .row {
+  margin: 10px;
+}
+
+/* -------- DASHBOARD --------- */
+.generalStatistics .inputDateBox {
+  margin: 20px auto;
+}
+
+.generalStatistics .tableWithDigit {
+  margin: 20px auto;
+}
+
+.generalStatistics .tabs {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.generalStatistics .tabs .signups {
+  background: #56819F;
+}
+
+.generalStatistics .tabs .FTD {
+  background: #F58220;
+}
+
+.generalStatistics .tabs .earned {
+  background: #04AE00;
+}
+
+.generalStatistics .chart {
+  text-align: center;
 }
 
 /* ---- LARGE TABLE WITH SORTING ---- */

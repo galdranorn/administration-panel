@@ -1,0 +1,48 @@
+/* -------- SIDE MENU -------- */
+.sideMenu {
+    width: 180px;
+    height: 100%;
+    background: $sideMenu;
+    position: fixed;
+    .hamburger {
+        text-align: center;
+        padding-top: 10px;
+        &:hover a {color: $sideMenuBor;}
+        a {
+            color: $greyButton;
+            font-size: 22px;
+        }
+    }
+    .menuLine {
+        height: 40px;
+        display: block;
+        position: relative;
+        padding-top: 5px;
+        &:hover {
+            background: $sideMenuHov;
+            border-left: 4px solid $sideMenuBor;
+            .text a {
+                color: white;
+            }
+        }
+        .icon {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            height: 100%;
+        }
+        .text {
+            font-size: 14px;
+            font-weight: 300;
+            font-family: $brandFont;
+            display: inline-block;
+            height: 100%;
+            a {
+                color: $greyButtonHov;
+            }
+        }
+    }
+    hr {
+        border-color: $greyButton;
+    }
+}

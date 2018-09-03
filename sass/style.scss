@@ -2,133 +2,76 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+
 /* Components */
 @import "components/fonts";
 @import "components/buttons";
 @import "components/checkbox";
+@import "components/tables";
+@import "components/inputs";
+@import "components/tabs";
+@import "components/notifications";
+
 /* Sections */
-//import "section/registration_form";
+@import "sections/sideMenu";
 
-/* Pages / Views */
-//import "pages/registration";
+/* -------- TOP MENU --------- */
 
-/* ---- COLOR TABS ---- */
-.tabBtn {
-    color: $greyButton;
-    border-radius: 2px;
-    position: relative;
-    padding-left: 30px;
-    .dot {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 8px;
-        background: $links;
-        border-radius: 50%;
-        width: 15px;
-        height: 15px;
-    }
-}
-.activeTabBtn {
-    background-color: white;
-}
-
-/* ---- TABLES WITH LINK AND DIGIT ---- */
-
-.table {
-    border-collapse: collapse;
-    tr {
-        height: 20px;
-        &:hover {
-            cursor: pointer;
-        }
-        td {
-            border-bottom: 1px solid $grey2;
-        }
-        .tableText {
-            width: 250px;
-            padding: 5px;
-        }
-    }
-}
-
-.tableWithLink, .tableWithSorting {
-    tbody{
-        tr {
-            &:hover {
-                background-color: $grey1;
-            }
-            td {
-                border-top: 1px solid $grey2;
-            }
-            .tableLink {
-                width: 60px;
-                text-align: center;
-            }
-        }
-    }
-}
-
-.tableWithDigit {
-    .tableDigit {
-        width: 50px;
-    }
-}
-
-/* ---- INPUTS ---- */
-
-.boxInput {
-    width: 200px;
-    padding: 10px;
-}
-.inputForm {
-    input, textarea {
+.topMenu {
+    position: fixed;
+    top: 0;
+    height: 50px;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid $grey2;
-    border-radius: 2px;
-    color: black;
-        &::placeholder {
-            color: $greyButtonHov;
+    background: $grey2;
+    text-align: right;
+}
+/* GLOBAL MAIN & SMALL BOX */
+.mainBox {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    width: calc(100% - 181px);
+    background: $grey1;
+    padding: 20px;
+    .smallBox {
+        position: relative;
+        background: white;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0px 0px 9px 2px rgba(222,222,222,1);
+        h2 {
+            padding: 10px;
         }
-        &:hover {
-            cursor: pointer;
-            border: 1px solid $greyButton;
+        .container {
+            background: white;
+            width: 80%;
+            margin-left: 10%;
+            padding: 10px;
+            .row {
+                margin: 10px;
+            }
         }
     }
-    .formText {
-        font-size: 12px;
-        font-family: $brandFont;
-    }
-    .formInput {
-        font-size: 14px;
-        font-family: $brandFont;
-    }
-    .incorrectPass input {
-        border: 1px solid $alert;
-    }
 }
 
-/* ---- DATE PERIOD ---- */
+/* -------- DASHBOARD --------- */
 
-/* ---- NOTIFICATIONS ---- */
-.positiveNotBtn, .negativeNotBtn {
-    font-size: 12px;
-    border-radius: 0;
-}
-
-.positiveNotBtn {
-    background: $lightPositiveNot;
-    &:hover {
-        background: $positiveNot;
+.generalStatistics {
+    .inputDateBox {
+        margin: 20px auto;
     }
-}
-.negativeNotBtn {
-    font-size: 12px;
-    background: $lightNegativeNot;
-    &:hover {
-        background: $negativeNot;
+    .tableWithDigit {
+        margin: 20px auto;
+    }
+    .tabs {
+        margin: 20px auto;
+        text-align: center;
+        .signups {background: $links;}
+        .FTD {background: $sideMenuBor;}
+        .earned {background: $green;}
+    }
+    .chart {
+        text-align: center;
     }
 }
 

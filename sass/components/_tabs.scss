@@ -1,0 +1,21 @@
+
+/* ---- COLOR TABS ---- */
+.tabBtn {
+    color: $greyButton;
+    border-radius: 2px;
+    position: relative;
+    padding-left: 30px;
+    .dot {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        background: $links;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+    }
+}
+.activeTabBtn {
+    background-color: white;
+}
