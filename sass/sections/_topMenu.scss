@@ -1,0 +1,63 @@
+
+/* -------- TOP MENU --------- */
+
+.topMenu {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background: white;
+    text-align: right;
+    .topMenuBtn {
+        display: inline-block;
+        height: 50px;
+        background: white;
+        border-width: 0;
+        border-left: 1px solid $grey2;
+        color: $greyButtonHov;
+        position: relative;
+        .icon {
+            height: 20px;
+            width: 20px;
+            margin: 0 10px;
+            opacity: 0.5;
+            position: relative;
+        }
+        .smallIcon {
+            width: 10px;
+            height: 10px;
+            margin: 0 10px;
+        }
+        .dot {
+            content: "";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: $sideMenuBor;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+        }
+        .money {
+            margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: $brandFont;
+        }
+        .profile {
+            margin-right: 10px;
+            font-size: 12px;
+
+        }
+        &:hover {
+            background: $grey2;
+            color: $sideMenuBor;
+            img {
+                opacity: 1.0;
+            }
+            a {
+                color: $sideMenuBor;
+            }
+        }
+    }
+}

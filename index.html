@@ -11,7 +11,10 @@
     <body>
 <!-- TOP MENU -->
         <header class="topMenu">
-            Here will be top menu            
+            <button class="topMenuBtn"><img class="icon" src="images/icons/wallet.svg" alt=""><span class="money">1,500.00$</span><img class="smallIcon" src="images/icons/arrow-down-small.svg" alt=""></button>
+            <button class="topMenuBtn"><img class="icon" src="images/icons/notification.svg" alt=""><span class="dot"></span></button>
+            <button class="topMenuBtn"><a href="#"><img class="icon" src="images/icons/profile.svg" alt=""><span class="profile">Leonardo Dicaprio</span></a></button>
+            <button class="topMenuBtn"><img class="icon" src="images/icons/quit.svg" alt=""></button>       
         </header>
 
 <!-- SIDE MENU -->
@@ -22,31 +25,31 @@
                     <div class="col-4 hamburger"><a href="#"><i class="fa fa-bars"></i></a></div>
                 </div>
                 <div class="row menuLine">
-                    <div class="col-3 icon"><i class="far fa-star"></i></div>
+                    <div class="col-3 icon"><img src="images/icons/general.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">General</a></div>
                 </div>
                 <div class="row menuLine">
-                    <div class="col-3 icon"><i class="fas fa-info"></i></div>
+                    <div class="col-3 icon"><img src="images/icons/details.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Details</a></div>
                 </div>
                 <div class="row menuLine">
-                    <div class="col-3 icon"><i class="fas fa-link"></i></div>
+                    <div class="col-3 icon"><img src="images/icons/links.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Links</a></div>
                 </div>
                 <div class="row menuLine">
-                    <div class="col-3 icon"><i class="fas fa-stream"></i></div>
+                    <div class="col-3 icon"><img src="images/icons/banners.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Banners</a></div>
                 </div>
                 <div class="row menuLine">
-                    <div class="col-3 icon"><i class="far fa-user"></i></div>
+                    <div class="col-3 icon"><img src="images/icons/personaldata.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Personal data</a></div>
                 </div>
                 <div class="row menuLine">
-                    <div class="col-3 icon"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="col-3 icon"><img src="images/icons/payout.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Payout</a></div>
                 </div>
                 <div class="row menuLine">
-                    <div class="col-3 icon"><i class="fas fa-reply"></i></div>
+                    <div class="col-3 icon"><img src="images/icons/postback.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Postback</a></div>
                 </div>
                 <br>
@@ -124,11 +127,142 @@
                 
                 <!-- 2. links -->
                     <div class="smallBox links">
-...
+                        <h2>Links</h2><hr>
+
+                        <!-- add link button -->
+                        <div class="addLink">
+                            <button class="btn themeBtn">+ add new</button><br>
+                        </div>
+
+                        <!-- table with links -->
+                        <div class="container">
+                            <table class="table tableWithLink">
+                                <tbody><tr>
+                                    <td class="tableText"><h3>Home page</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.homepage.com</a></td>
+                                </tr><tr>
+                                    <td class="tableText"><h3>Currently offer</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.currently.com</a></td>
+                                </tr><tr>
+                                    <td class="tableText"><h3>Blurpix</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.blurpix.com</a></td>
+                                </tr><tr> 
+                                    <td class="tableText"><h3>Your site</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.yoursite.com</a></td>
+                                </tr><tr> 
+                                    <td class="tableText"><h3>Google</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.google.com</a></td>
+                                </tr><tr> 
+                                    <td class="tableText"><h3>Facebook</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.facebook.com</a></td>
+                                </tr><tr>  
+                                    <td class="tableText"><h3>Dashboard</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.dashboard.com</a></td>
+                                </tr><tr>
+                                    <td class="tableText"><h3>Blurax</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.blurax.com</a></td>
+                                </tr><tr>                                          
+                                    <td class="tableText"><h3>Piece of wine</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.pieceofwine.com</a></td>
+                                </tr><tr>
+                                    <td class="tableText"><h3>Twitter</h3></td>
+                                    <td class="tableLink"><a class="smallLink" href="#">http://www.twitter.com</a></td>
+                                </tr></tbody>
+                            </table>
+                        </div>
+
+                        <!-- add link button -->
+                        <div class="addLink">
+                            <button class="btn themeBtn">+ add new</button><br>
+                        </div>
                     </div>
+            </section>
+            
+<!-- BANNERS -->
+
+            <section class="banners">
+                <div class="smallBox bannersDiv">
+                    <h2>Banners</h2><hr>  
+                    <!--add banner button-->
+                    <div class="addBanner">
+                        <button class="btn themeBtn">+ add new</button><br>
+                    </div>
+                    <div class="container">
+                        <table class="table tableWithLink">
+                            <tbody><tr>
+                                <td class="tableText"><h3>Banner main</h3></td>
+                                <td class="tableLink"><a class="smallLink" href="#">http://www.website.com/bannermain.gif</a></td>
+                            </tr><tr>
+                                <td class="tableText"><h3>Sign up banner</h3></td>
+                                <td class="tableLink"><a class="smallLink" href="#">http://www.website.com/signup.gif</a></td>
+                            </tr><tr>
+                                <td class="tableText"><h3>Banner left side</h3></td>
+                                <td class="tableLink"><a class="smallLink" href="#">http://www.website.com/leftside.gif</a></td>
+                            </tr><tr> 
+                                <td class="tableText"><h3>Vertical banner</h3></td>
+                                <td class="tableLink"><a class="smallLink" href="#">http://www.website.com/vert.gif</a></td>
+                            </tr><tr> 
+                                <td class="tableText"><h3>Front banner</h3></td>
+                                <td class="tableLink"><a class="smallLink" href="#">http://www.website.com/front.gif</a></td>
+                            </tr><tr>
+                                <td class="tableText"><h3>Horizontal banner</h3></td>
+                                <td class="tableLink"><a class="smallLink" href="#">http://www.website.com/horizontal.gif</a></td>
+                            </tr></tbody>
+                        </table>
+                    </div>
+    
+                    <!-- add button -->
+                    <div class="addBanner">
+                        <button class="btn themeBtn">+ add new</button><br>
+                    </div>
+                </div>
+            </section>
+
+<!-- PERSONAL DATA -->
+            <section class="personalData">
                 
-                </section>
-            </div>
+                <div class="smallBox">
+                    <h2>Personal data</h2><hr>
+                    <form class="inputForm">
+                        <!-- first section -->
+                        <div class="container">
+                            <div class="row form-group formInput">
+                                <div class="col-4 label"><h3>Name</h3></div>  
+                                <div class="col-8"><input type="text" class="form-control" id="input-name"></div>
+                            </div>
+                            <div class="row form-group formInput">
+                                <div class="col-4 label"><h3>Surname</h3></div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-surname"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 label"><h3>E-mail</h3></div>
+                                <div class="col-8">Input</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 label"><h3>Phone number</h3></div>
+                                <div class="col-8">Input</div>
+                            </div>
+                        </div>
+                        <hr>
+                    <!-- second section -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 label"><h3>Skype</h3></div>
+                                <div class="col-8">Input</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 label"><h3>ICQ</h3></div>
+                                <div class="col-8">Input</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 label"><h3>Msn</h3></div>
+                                <div class="col-8">Input</div>
+                            </div>
+                        </div>
+                        <hr>
+                </form>
+                </div>
+            </section>
 
 <!-- SECTION FOR CONTENTS FINISHES -->
         </div>

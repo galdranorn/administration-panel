@@ -655,6 +655,10 @@ a:hover {
   padding: 5px;
 }
 
+.tableWithLink tbody tr, .tableWithSorting tbody tr {
+  height: 40px;
+}
+
 .tableWithLink tbody tr:hover, .tableWithSorting tbody tr:hover {
   background-color: #F5F5F2;
 }
@@ -828,7 +832,12 @@ a:hover {
   text-align: center;
   color: black;
   display: inline-block;
-  height: 100%;
+  height: 40px;
+}
+
+.sideMenu .menuLine .icon img {
+  width: 20px;
+  height: 20px;
 }
 
 .sideMenu .menuLine .text {
@@ -853,8 +862,68 @@ a:hover {
   top: 0;
   height: 50px;
   width: 100%;
-  background: #E3E3E3;
+  background: white;
   text-align: right;
+}
+
+.topMenu .topMenuBtn {
+  display: inline-block;
+  height: 50px;
+  background: white;
+  border-width: 0;
+  border-left: 1px solid #E3E3E3;
+  color: #bababa;
+  position: relative;
+}
+
+.topMenu .topMenuBtn .icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  opacity: 0.5;
+  position: relative;
+}
+
+.topMenu .topMenuBtn .smallIcon {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+
+.topMenu .topMenuBtn .dot {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #F58220;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.topMenu .topMenuBtn .money {
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Open Sans";
+}
+
+.topMenu .topMenuBtn .profile {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.topMenu .topMenuBtn:hover {
+  background: #E3E3E3;
+  color: #F58220;
+}
+
+.topMenu .topMenuBtn:hover img {
+  opacity: 1.0;
+}
+
+.topMenu .topMenuBtn:hover a {
+  color: #F58220;
 }
 
 /* GLOBAL MAIN & SMALL BOX */
@@ -890,13 +959,18 @@ a:hover {
   margin: 10px;
 }
 
-/* -------- DASHBOARD --------- */
+/* Pages */
+/* general statistics */
 .generalStatistics .inputDateBox {
   margin: 20px auto;
 }
 
 .generalStatistics .tableWithDigit {
   margin: 20px auto;
+}
+
+.generalStatistics .chart {
+  text-align: center;
 }
 
 .generalStatistics .tabs {
@@ -916,13 +990,55 @@ a:hover {
   background: #04AE00;
 }
 
-.generalStatistics .chart {
+/* links */
+.links .addLink {
+  padding: 10px;
   text-align: center;
 }
 
-/* ---- LARGE TABLE WITH SORTING ---- */
+.links .table {
+  width: 100%;
+}
+
+.links .table .tableText {
+  width: 40%;
+}
+
+.links .table .tableLink {
+  width: 60%;
+  text-align: left;
+}
+
+/* banners */
+.banners .addBanner {
+  padding: 10px;
+  text-align: center;
+}
+
+.banners .table {
+  width: 100%;
+}
+
+.banners .table .tableText {
+  width: 40%;
+}
+
+.banners .table .tableLink {
+  width: 60%;
+  text-align: left;
+}
+
+/* PERSONAL DATA */
+.personalData .form-group {
+  width: 70%;
+  padding-left: 15%;
+}
+
+.personalData .form-group .label {
+  padding: 10px;
+}
+
 /* ---- SLIDER ---- */
 /* ---- PAGINATION ----*/
 /* ---- MESSENGER ----*/
-/* ---- TOP MENU BUTTONS ----*/
 /*# sourceMappingURL=style.css.map */

@@ -14,73 +14,26 @@
 
 /* Sections */
 @import "sections/sideMenu";
+@import "sections/topMenu";
+@import "sections/mainSmallBox";
 
-/* -------- TOP MENU --------- */
+/* Pages */
+@import "pages/dashboard";
 
-.topMenu {
-    position: fixed;
-    top: 0;
-    height: 50px;
-    width: 100%;
-    background: $grey2;
-    text-align: right;
-}
-/* GLOBAL MAIN & SMALL BOX */
-.mainBox {
-    position: absolute;
-    top: 50px;
-    left: 180px;
-    width: calc(100% - 181px);
-    background: $grey1;
-    padding: 20px;
-    .smallBox {
-        position: relative;
-        background: white;
-        padding: 20px;
-        margin: 20px;
-        box-shadow: 0px 0px 9px 2px rgba(222,222,222,1);
-        h2 {
+/* PERSONAL DATA */
+
+.personalData {
+    .form-group {
+        width: 70%;
+        padding-left: 15%;
+        .label {
             padding: 10px;
         }
-        .container {
-            background: white;
-            width: 80%;
-            margin-left: 10%;
-            padding: 10px;
-            .row {
-                margin: 10px;
-            }
-        }
     }
 }
-
-/* -------- DASHBOARD --------- */
-
-.generalStatistics {
-    .inputDateBox {
-        margin: 20px auto;
-    }
-    .tableWithDigit {
-        margin: 20px auto;
-    }
-    .tabs {
-        margin: 20px auto;
-        text-align: center;
-        .signups {background: $links;}
-        .FTD {background: $sideMenuBor;}
-        .earned {background: $green;}
-    }
-    .chart {
-        text-align: center;
-    }
-}
-
-/* ---- LARGE TABLE WITH SORTING ---- */
 
 /* ---- SLIDER ---- */
 
 /* ---- PAGINATION ----*/
 
 /* ---- MESSENGER ----*/
-
-/* ---- TOP MENU BUTTONS ----*/
