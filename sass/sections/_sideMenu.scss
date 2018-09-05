@@ -4,6 +4,7 @@
     height: 100%;
     background: $sideMenu;
     position: fixed;
+    z-index: 3;
     .hamburger {
         text-align: center;
         padding-top: 10px;

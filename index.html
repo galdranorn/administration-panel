@@ -11,10 +11,24 @@
     <body>
 <!-- TOP MENU -->
         <header class="topMenu">
-            <button class="topMenuBtn"><img class="icon" src="images/icons/wallet.svg" alt=""><span class="money">1,500.00$</span><img class="smallIcon" src="images/icons/arrow-down-small.svg" alt=""></button>
-            <button class="topMenuBtn"><img class="icon" src="images/icons/notification.svg" alt=""><span class="dot"></span></button>
-            <button class="topMenuBtn"><a href="#"><img class="icon" src="images/icons/profile.svg" alt=""><span class="profile">Leonardo Dicaprio</span></a></button>
-            <button class="topMenuBtn"><img class="icon" src="images/icons/quit.svg" alt=""></button>       
+            <button class="topMenuBtn">
+                <img class="icon" src="images/icons/wallet.svg" alt="">
+                <span class="money">1,500.00$</span>
+                <img class="smallIcon" src="images/icons/arrow-down-small.svg" alt="">
+            </button>
+            <button class="topMenuBtn">
+                <img class="icon" src="images/icons/notification.svg" alt="">
+                <span class="dot"></span>
+                </button>
+            <button class="topMenuBtn">
+                <a href="#">
+                    <img class="icon" src="images/icons/profile.svg" alt="">
+                    <span class="profile">Leonardo Dicaprio</span>
+                </a>
+                </button>
+            <button class="topMenuBtn">
+                <img class="icon" src="images/icons/quit.svg" alt="">
+            </button>       
         </header>
 
 <!-- SIDE MENU -->
@@ -22,17 +36,17 @@
             <div class="containerMenu">
                 <div class="row">
                     <div class="col-8 logo"><img src="images/logo.png" alt="logo"></div>
-                    <div class="col-4 hamburger"><a href="#"><i class="fa fa-bars"></i></a></div>
+                    <div class="col-4 hamburger"><a href="#"><span class="fa fa-bars"></span></a></div>
                 </div>
-                <div class="row menuLine">
+                <div class="row menuLine" id="menuGeneral">
                     <div class="col-3 icon"><img src="images/icons/general.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">General</a></div>
                 </div>
-                <div class="row menuLine">
+                <div class="row menuLine" id="menuDetails">
                     <div class="col-3 icon"><img src="images/icons/details.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Details</a></div>
                 </div>
-                <div class="row menuLine">
+                <div class="row menuLine" id="menuLinks">
                     <div class="col-3 icon"><img src="images/icons/links.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Links</a></div>
                 </div>
@@ -65,15 +79,13 @@
 
 <!-- SECTION FOR CONTENTS STARTS -->
         <div class="mainBox">
-            
+
 <!-- DASHBOARD -->
             <section class="dashboard">
-
-                <!-- 1. general statistics -->
+<!-- DASHBOARD - STATISTICS -->                
                     <div class="smallBox generalStatistics">
                         <h2>General statistics</h2><hr>
-
-                        <!-- 1.1. input date box -->
+<!-- input date box -->                        
                         <div class="inputDateBox">
                             <div>
                                 <input type="date" id="start" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
@@ -83,8 +95,7 @@
                             </div>
                         </div> 
                         <hr>
-
-                        <!-- 1.2. table with digits -->
+<!-- table with digits -->
                         <div class="container">
                             <div class="row">
                                 <div class="col-6">
@@ -111,8 +122,7 @@
                                     <br><br>
                                 </div>
                             </div>
-
-                            <!-- 1.3. earning chart -->
+<!-- earning chart -->
                             <h3>Earnings chart</h3>
                             <div class="tabs">
                                 <button class="btn tabBtn"><span class="dot signups"></span>Signups</button>
@@ -125,16 +135,14 @@
                         </div>
                     </div>
                 
-                <!-- 2. links -->
+<!-- DASHBOARD - LINKS -->
                     <div class="smallBox links">
                         <h2>Links</h2><hr>
-
-                        <!-- add link button -->
+<!-- add link button -->
                         <div class="addLink">
                             <button class="btn themeBtn">+ add new</button><br>
                         </div>
-
-                        <!-- table with links -->
+<!-- table with links -->
                         <div class="container">
                             <table class="table tableWithLink">
                                 <tbody><tr>
@@ -170,8 +178,7 @@
                                 </tr></tbody>
                             </table>
                         </div>
-
-                        <!-- add link button -->
+<!-- add link button -->
                         <div class="addLink">
                             <button class="btn themeBtn">+ add new</button><br>
                         </div>
@@ -179,14 +186,14 @@
             </section>
             
 <!-- BANNERS -->
-
             <section class="banners">
                 <div class="smallBox bannersDiv">
                     <h2>Banners</h2><hr>  
-                    <!--add banner button-->
+<!--add banner button-->
                     <div class="addBanner">
                         <button class="btn themeBtn">+ add new</button><br>
                     </div>
+<!-- table with links -->
                     <div class="container">
                         <table class="table tableWithLink">
                             <tbody><tr>
@@ -209,9 +216,8 @@
                                 <td class="tableLink"><a class="smallLink" href="#">http://www.website.com/horizontal.gif</a></td>
                             </tr></tbody>
                         </table>
-                    </div>
-    
-                    <!-- add button -->
+                    </div>    
+<!-- add banner button -->
                     <div class="addBanner">
                         <button class="btn themeBtn">+ add new</button><br>
                     </div>
@@ -219,12 +225,11 @@
             </section>
 
 <!-- PERSONAL DATA -->
-            <section class="personalData">
-                
+            <section class="personalData">           
                 <div class="smallBox">
                     <h2>Personal data</h2><hr>
                     <form class="inputForm">
-                        <!-- first section -->
+<!-- first section of form -->
                         <div class="container">
                             <div class="row form-group formInput">
                                 <div class="col-4 label"><h3>Name</h3></div>  
@@ -234,37 +239,277 @@
                                 <div class="col-4 label"><h3>Surname</h3></div>
                                 <div class="col-8"><input type="text" class="form-control" id="input-surname"></div>
                             </div>
-                            <div class="row">
+                            <div class="row form-group formInput">
                                 <div class="col-4 label"><h3>E-mail</h3></div>
-                                <div class="col-8">Input</div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-email"></div>
                             </div>
-                            <div class="row">
+                            <div class="row form-group formInput">
                                 <div class="col-4 label"><h3>Phone number</h3></div>
-                                <div class="col-8">Input</div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-phone"></div>
                             </div>
                         </div>
                         <hr>
-                    <!-- second section -->
+<!-- second section of form -->
                         <div class="container">
-                            <div class="row">
+                            <div class="row form-group formInput">
                                 <div class="col-4 label"><h3>Skype</h3></div>
-                                <div class="col-8">Input</div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-skype"></div>
                             </div>
-                            <div class="row">
+                            <div class="row form-group formInput">
                                 <div class="col-4 label"><h3>ICQ</h3></div>
-                                <div class="col-8">Input</div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-icq"></div>
                             </div>
-                            <div class="row">
+                            <div class="row form-group formInput">
                                 <div class="col-4 label"><h3>Msn</h3></div>
-                                <div class="col-8">Input</div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-msn"></div>
                             </div>
                         </div>
                         <hr>
+<!-- third section of form -->
+                        <div class="container">
+                            <div class="row form-group formInput">
+                                <div class="col-4 label"><h3>Wallet</h3></div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-wallet"></div>
+                            </div>
+                        </div>
+                        <hr>
+<!-- fourth section of form -->
+                        <div class="container">
+                            <div class="row form-group formInput">
+                                <div class="col-4 label"><h3>Password</h3></div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-password"></div>
+                            </div><div class="row form-group formInput">
+                                <div class="col-4 label"><h3>Repeat</h3></div>
+                                <div class="col-8"><input type="text" class="form-control" id="input-password2"></div>
+                            </div>
+                        </div>
+                        <hr>
+<!-- save button -->
+                        <button class="btn themeBtn" id="personalSaveBtn">Save</button><br>
                 </form>
                 </div>
             </section>
 
+<!-- PAYOUT -->
+            <section class="payout">
+                <div class="smallBox">
+                    <h2>Payout history</h2><hr>
+                    <div class="inputDateBox">
+                        <input type="date" id="start" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                        <span class ="separator">|</span>
+                        <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
+                        <span class="far fa-calendar-alt"></span>
+                    </div> 
+<!-- table with data -->
+                    <table class="table tableWithSorting">
+                        <thead><tr>
+                            <td class="col-3"><button class="sortingBtn">Date<i class="arrow down"></i></button></td>
+                            <td class="col-3"><button class="sortingBtn">Amount<i class="arrow down"></i></button></td>
+                            <td class="col-3"><button class="sortingBtn">Deal<i class="arrow down"></i></button></td>
+                            <td class="col-3"><button class="sortingBtn">Account<i class="arrow down"></i></button></td>
+                        </tr></thead>
+                        <tbody><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+<!-- pagination -->                    
+                    <div class="pagination">
+                        <img src="images/icons/arrow-left.svg">
+                        <a href="#"><button class="btn">1</button></a>
+                        <a href="#"><button class="btn">2</button></a>
+                        <a href="#"><button class="btn">3</button></a>
+                        <a href="#"><button class="btn">4</button></a>
+                        <a href="#"><button class="btn">5</button></a>
+                        <a href="#"><button class="btn">6</button></a>
+                        <a href="#"><button class="btn">7</button></a>
+                        <a href="#"><button class="btn">8</button></a>
+                        <a href="#"><button class="btn">9</button></a>
+                        <img src="images/icons/arrow-right.svg">
+                    </div>
+            </section>
+
+<!-- DETAILS -->
+<section class="details">
+    <div class="smallBox">
+        <h2>DETAILS</h2><hr>
+<!-- input date box -->        
+        <div class="inputDateBox">
+            <input type="date" id="start" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+            <span class ="separator">|</span>
+            <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
+            <span class="far fa-calendar-alt"></span>
+        </div> 
+
+<!-- table with data -->
+            <table class="table tableWithSorting">
+                <thead><tr>
+                    <td class="col-1"><button class="sortingBtn">Tracker name</button></td>
+                    <td class="col-2"><button class="sortingBtn">Initiated date<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Visits<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Unique<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Signups<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">FTD<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Depositors<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Deposits($)<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Payout($)<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Turnover<i class="arrow down"></i></button></td>
+                    <td class="col-1"><button class="sortingBtn">Deal<i class="arrow down"></i></button></td>
+                </tr></thead>
+                <tbody><tr>
+                    <td class="col-1 tableText"><p>aff/sam_test</p></td>
+                    <td class="col-2 tableText"><p>17/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>34,425.00</p></td>
+                    <td class="col-1 tableText"><p>234.00</p></td>
+                    <td class="col-1 tableText"><p>421,342.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr><tr>
+                    <td class="col-1 tableText"><p>aff/leo_test</p></td>
+                    <td class="col-2 tableText"><p>15/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>29,436.00</p></td>
+                    <td class="col-1 tableText"><p>941.00</p></td>
+                    <td class="col-1 tableText"><p>784,435.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr><tr>
+                    <td class="col-1 tableText"><p>aff/sam_test</p></td>
+                    <td class="col-2 tableText"><p>17/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>34,425.00</p></td>
+                    <td class="col-1 tableText"><p>234.00</p></td>
+                    <td class="col-1 tableText"><p>421,342.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr><tr>
+                    <td class="col-1 tableText"><p>aff/leo_test</p></td>
+                    <td class="col-2 tableText"><p>15/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>29,436.00</p></td>
+                    <td class="col-1 tableText"><p>941.00</p></td>
+                    <td class="col-1 tableText"><p>784,435.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr><tr>
+                    <td class="col-1 tableText"><p>aff/sam_test</p></td>
+                    <td class="col-2 tableText"><p>17/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>34,425.00</p></td>
+                    <td class="col-1 tableText"><p>234.00</p></td>
+                    <td class="col-1 tableText"><p>421,342.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr><tr>
+                    <td class="col-1 tableText"><p>aff/leo_test</p></td>
+                    <td class="col-2 tableText"><p>15/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>29,436.00</p></td>
+                    <td class="col-1 tableText"><p>941.00</p></td>
+                    <td class="col-1 tableText"><p>784,435.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr><tr>
+                    <td class="col-1 tableText"><p>aff/sam_test</p></td>
+                    <td class="col-2 tableText"><p>17/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>34,425.00</p></td>
+                    <td class="col-1 tableText"><p>234.00</p></td>
+                    <td class="col-1 tableText"><p>421,342.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr><tr>
+                    <td class="col-1 tableText"><p>aff/leo_test</p></td>
+                    <td class="col-2 tableText"><p>15/08/02 (12:58)</p></td>
+                    <td class="col-1 tableText"><p>232</p></td>
+                    <td class="col-1 tableText"><p>114</p></td>
+                    <td class="col-1 tableText"><p>12</p></td>
+                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 tableText"><p>3</p></td>
+                    <td class="col-1 tableText"><p>29,436.00</p></td>
+                    <td class="col-1 tableText"><p>941.00</p></td>
+                    <td class="col-1 tableText"><p>784,435.00</p></td>
+                    <td class="col-1 tableText"><p>cpl(200)</p></td>
+                </tr></tbody>
+            </table>
+<!-- pagination -->        
+        <div class="pagination">
+            <img src="images/icons/arrow-left.svg">
+            <a href="#"><button class="btn">1</button></a>
+            <a href="#"><button class="btn">2</button></a>
+            <a href="#"><button class="btn">3</button></a>
+            <a href="#"><button class="btn">4</button></a>
+            <a href="#"><button class="btn">5</button></a>
+            <a href="#"><button class="btn">6</button></a>
+            <a href="#"><button class="btn">7</button></a>
+            <a href="#"><button class="btn">8</button></a>
+            <a href="#"><button class="btn">9</button></a>
+            <img src="images/icons/arrow-right.svg">
+        </div>
+</section>
+
 <!-- SECTION FOR CONTENTS FINISHES -->
+
         </div>
     </body>
 </html>

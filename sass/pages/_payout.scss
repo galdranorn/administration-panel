@@ -1,0 +1,23 @@
+
+/* PAYOUT */
+
+.payout {
+    .inputDateBox {
+        text-align: center;
+        margin: 20px auto;
+    }
+    .table {
+        width: 80%;
+        margin: 0 auto;
+        td {
+            width: 25%;
+            padding: 10px 0;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .pagination {
+        text-align: center;
+        padding: 10px;
+    }
+}

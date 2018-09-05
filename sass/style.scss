@@ -11,6 +11,7 @@
 @import "components/inputs";
 @import "components/tabs";
 @import "components/notifications";
+@import "components/pagination";
 
 /* Sections */
 @import "sections/sideMenu";
@@ -19,21 +20,12 @@
 
 /* Pages */
 @import "pages/dashboard";
+@import "pages/personalData";
+@import "pages/payout";
+@import "pages/details";
 
-/* PERSONAL DATA */
 
-.personalData {
-    .form-group {
-        width: 70%;
-        padding-left: 15%;
-        .label {
-            padding: 10px;
-        }
-    }
-}
 
 /* ---- SLIDER ---- */
-
-/* ---- PAGINATION ----*/
 
 /* ---- MESSENGER ----*/

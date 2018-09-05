@@ -1,0 +1,28 @@
+.details {
+    .container {
+        margin: 0;
+    }
+    .inputDateBox {
+        margin: 10px auto;
+    }
+    table {
+        width: 100%;
+        td {
+            padding: 12px 0;
+        }
+        .tableText {
+            padding: 13px 0;
+            width: 8.33%;
+            p {
+                font-size: 12px;
+                padding-left: 15px;
+            }
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+    }
+    .pagination {
+        text-align: center;
+    }
+}

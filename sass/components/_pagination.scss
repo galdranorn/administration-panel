@@ -1,0 +1,17 @@
+.pagination {
+    img {
+        width: 20px;
+        height: 20px;
+        padding-top: 10px;
+    }
+    button {
+        background: white;
+        color: $links;
+        &:hover {
+            color: $greyButtonHov;
+            background: $grey2;
+            font-weight: bold;
+            border-radius: 0;
+        }
+    }
+}
