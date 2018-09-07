@@ -50,19 +50,19 @@
                     <div class="col-3 icon"><img src="images/icons/links.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Links</a></div>
                 </div>
-                <div class="row menuLine">
+                <div class="row menuLine" id="menuBanners">
                     <div class="col-3 icon"><img src="images/icons/banners.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Banners</a></div>
                 </div>
-                <div class="row menuLine">
+                <div class="row menuLine" id="menuPersonalData">
                     <div class="col-3 icon"><img src="images/icons/personaldata.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Personal data</a></div>
                 </div>
-                <div class="row menuLine">
+                <div class="row menuLine" id="menuPayout">
                     <div class="col-3 icon"><img src="images/icons/payout.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Payout</a></div>
                 </div>
-                <div class="row menuLine">
+                <div class="row menuLine" id="menuPostback">
                     <div class="col-3 icon"><img src="images/icons/postback.svg" alt=""></div>
                     <div class="col-9 text"><a href="#">Postback</a></div>
                 </div>
@@ -81,9 +81,9 @@
         <div class="mainBox">
 
 <!-- DASHBOARD -->
-            <section class="dashboard">
+            <section class="dashboard" id="general">
 <!-- DASHBOARD - STATISTICS -->                
-                    <div class="smallBox generalStatistics">
+                    <div class="smallBox generalStatistics" id="statistics">
                         <h2>General statistics</h2><hr>
 <!-- input date box -->                        
                         <div class="inputDateBox">
@@ -136,7 +136,7 @@
                     </div>
                 
 <!-- DASHBOARD - LINKS -->
-                    <div class="smallBox links">
+                    <div class="smallBox links" id="links">
                         <h2>Links</h2><hr>
 <!-- add link button -->
                         <div class="addLink">
@@ -186,7 +186,7 @@
             </section>
             
 <!-- BANNERS -->
-            <section class="banners">
+            <section class="banners" id="banners">
                 <div class="smallBox bannersDiv">
                     <h2>Banners</h2><hr>  
 <!--add banner button-->
@@ -225,7 +225,7 @@
             </section>
 
 <!-- PERSONAL DATA -->
-            <section class="personalData">           
+            <section class="personalData" id="personalData">           
                 <div class="smallBox">
                     <h2>Personal data</h2><hr>
                     <form class="inputForm">
@@ -291,7 +291,7 @@
             </section>
 
 <!-- PAYOUT -->
-            <section class="payout">
+            <section class="payout" id="payout">
                 <div class="smallBox">
                     <h2>Payout history</h2><hr>
                     <div class="inputDateBox">
@@ -368,7 +368,7 @@
             </section>
 
 <!-- DETAILS -->
-<section class="details">
+<section class="details" id="details">
     <div class="smallBox">
         <h2>DETAILS</h2><hr>
 <!-- input date box -->        
@@ -436,7 +436,7 @@
                     <td class="col-1 tableText"><p>232</p></td>
                     <td class="col-1 tableText"><p>114</p></td>
                     <td class="col-1 tableText"><p>12</p></td>
-                    <td class="col-1 tableText"><p>6</p></td>
+                    <td class="col-1 stableText"><p>6</p></td>
                     <td class="col-1 tableText"><p>3</p></td>
                     <td class="col-1 tableText"><p>29,436.00</p></td>
                     <td class="col-1 tableText"><p>941.00</p></td>
@@ -511,5 +511,6 @@
 <!-- SECTION FOR CONTENTS FINISHES -->
 
         </div>
+        <script src="js/switchPages.js"></script> 
     </body>
 </html>

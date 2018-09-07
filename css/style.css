@@ -1125,6 +1125,10 @@ a:hover {
   text-align: center;
 }
 
+.unvisible {
+  display: none;
+}
+
 /* ---- SLIDER ---- */
 /* ---- MESSENGER ----*/
 /*# sourceMappingURL=style.css.map */
