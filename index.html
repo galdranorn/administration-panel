@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="node_modules/js-datepicker/datepicker.css">
     </head>
 
     <body>
@@ -35,7 +36,7 @@
         <section class="sideMenu">
             <div class="containerMenu">
                 <div class="row">
-                    <div class="col-8 logo"><img src="images/logo.png" alt="logo"></div>
+                    <div class="col-8 logo"><a href="http://galdranorn.github.io/administration-panel/"><img src="images/logo.png" alt="logo"></a></div>
                     <div class="col-4 hamburger"><a href="#"><span class="fa fa-bars"></span></a></div>
                 </div>
                 <div class="row menuLine" id="menuGeneral">
@@ -88,7 +89,7 @@
 <!-- input date box -->                        
                         <div class="inputDateBox">
                             <div>
-                                <input type="date" id="start" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                                <input type="date" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
                                 <span class ="separator">|</span>
                                 <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
                                 <i class="far fa-calendar-alt"></i>
@@ -139,9 +140,76 @@
                     <div class="smallBox links" id="links">
                         <h2>Links</h2><hr>
 <!-- add link button -->
-                        <div class="addLink">
+                        <div class="addLink" id="addLinkBtn">
                             <button class="btn themeBtn">+ add new</button><br>
                         </div>
+<!-- add link modal -->
+                        <div id="addLinkModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Add url</h2><hr>
+                                <div class="row topRow">
+                                    <div class="col-9 inputForm">
+                                        <h3>Scheme name</h3><br>
+                                        <input class="formInput" type="text" placeholder="Name">
+                                        <input class="formInput" type="test" placeholder="Select compaign">
+                                    </div>
+                                    <div class="row-3">
+                                        <h3>Language</h3>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h3>Select websites</h3>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP Wallet<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">E-Shop 01<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Toy Store<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Book Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Charity<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP Icons Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Templates Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Random text<input type="checkbox"><span class="checkmark"></span></label><br>
+                                    </div>
+                                    <div class="col-4">
+                                        <label class="checkboxLine">Mobile App<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP Senator free signals<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP DE Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Invest wisely<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Toy Store LP Sign up page<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Senator Account types<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Senator Mobile app<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Senator Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Senator April Promo<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Language Learning LP<input type="checkbox"><span class="checkmark"></span></label><br>
+                                    </div>
+                                    <div class="col-4">
+                                        <label class="checkboxLine">Your second site<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Your second LP<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP Wallet<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">E-Shop 01<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Toy Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Book Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">Mobile app<input type="checkbox"><span class="checkmark"></span></label><br>
+                                        <label class="checkboxLine">LP Senator free signals<input type="checkbox"><span class="checkmark"></span></label><br>
+                                    </div>
+                                </div><hr> 
+                                <div class="row bottomRow">
+                                    <div class="col-9 inputForm">
+                                        <input class="formInput" type="text" placeholder="Generated link"> 
+                                    </div>      
+                                    <div class="col-3 buttons">                 
+                                        <button class="btn disabledBtn"><img src="images/icons/links.svg" alt="">Copy link</button>
+                                        <button class="btn themeBtn">Save</button><br>
+                                    </div>
+                                </div>
+                            </div>
+ 
+ </div> 
 <!-- table with links -->
                         <div class="container">
                             <table class="table tableWithLink">
@@ -511,6 +579,7 @@
 <!-- SECTION FOR CONTENTS FINISHES -->
 
         </div>
+        <script src="node_modules/js-datepicker/datepicker.js"></script> 
         <script src="js/switchPages.js"></script> 
     </body>
 </html>
