@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Administration panel</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -34,38 +35,38 @@
 
 <!-- SIDE MENU -->
         <section class="sideMenu">
-            <div class="containerMenu">
+            <div class="container">
                 <div class="row">
-                    <div class="col-8 logo"><a href="http://galdranorn.github.io/administration-panel/"><img src="images/logo.png" alt="logo"></a></div>
-                    <div class="col-4 hamburger"><a href="#"><span class="fa fa-bars"></span></a></div>
+                    <div class="col-md-8 logo"><a href="http://galdranorn.github.io/administration-panel/"><img src="images/logo.png" alt="logo"></a></div>
+                    <div class="col-md-4 hamburger"><a href="#"><span class="fa fa-bars"></span></a></div>
                 </div>
                 <div class="row menuLine" id="menuGeneral">
-                    <div class="col-3 icon"><img src="images/icons/general.svg" alt=""></div>
-                    <div class="col-9 text"><a href="#">General</a></div>
+                    <div class="col-md-4 unvisible-sm icon"><img src="images/icons/general.svg" alt=""></div>
+                    <div class="col-md-8 unvisible-sm text"><a href="#">General</a></div>
                 </div>
                 <div class="row menuLine" id="menuDetails">
-                    <div class="col-3 icon"><img src="images/icons/details.svg" alt=""></div>
-                    <div class="col-9 text"><a href="#">Details</a></div>
+                    <div class="col-md-4 icon"><img src="images/icons/details.svg" alt=""></div>
+                    <div class="col-md-8 text"><a href="#">Details</a></div>
                 </div>
                 <div class="row menuLine" id="menuLinks">
-                    <div class="col-3 icon"><img src="images/icons/links.svg" alt=""></div>
-                    <div class="col-9 text"><a href="#">Links</a></div>
+                    <div class="col-md-4 icon"><img src="images/icons/links.svg" alt=""></div>
+                    <div class="col-md-8 text"><a href="#">Links</a></div>
                 </div>
                 <div class="row menuLine" id="menuBanners">
-                    <div class="col-3 icon"><img src="images/icons/banners.svg" alt=""></div>
-                    <div class="col-9 text"><a href="#">Banners</a></div>
+                    <div class="col-md-4 icon"><img src="images/icons/banners.svg" alt=""></div>
+                    <div class="col-md-8 text"><a href="#">Banners</a></div>
                 </div>
                 <div class="row menuLine" id="menuPersonalData">
-                    <div class="col-3 icon"><img src="images/icons/personaldata.svg" alt=""></div>
-                    <div class="col-9 text"><a href="#">Personal data</a></div>
+                    <div class="col-md-4 icon"><img src="images/icons/personaldata.svg" alt=""></div>
+                    <div class="col-md-8 text"><a href="#">Personal data</a></div>
                 </div>
                 <div class="row menuLine" id="menuPayout">
-                    <div class="col-3 icon"><img src="images/icons/payout.svg" alt=""></div>
-                    <div class="col-9 text"><a href="#">Payout</a></div>
+                    <div class="col-md-4 icon"><img src="images/icons/payout.svg" alt=""></div>
+                    <div class="col-md-8 text"><a href="#">Payout</a></div>
                 </div>
                 <div class="row menuLine" id="menuPostback">
-                    <div class="col-3 icon"><img src="images/icons/postback.svg" alt=""></div>
-                    <div class="col-9 text"><a href="#">Postback</a></div>
+                    <div class="col-md-4 icon"><img src="images/icons/postback.svg" alt=""></div>
+                    <div class="col-md-8 text"><a href="#">Postback</a></div>
                 </div>
                 <br>
                 <hr>
@@ -99,7 +100,7 @@
 <!-- table with digits -->
                         <div class="container">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-12">
                                     <table class="table tableWithDigit">
                                         <tbody><tr>
                                                 <td class="tableText"><h3>Visit Signups</h3></td>
@@ -110,7 +111,7 @@
                                         </tr></tbody>
                                     </table>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-12">
                                     <table class="table tableWithDigit">
                                         <tbody><tr>
                                             <td class="tableText"><h3>Net deposit</h3></td>
@@ -154,7 +155,7 @@
                                         <input class="formInput" type="text" placeholder="Name">
                                         <input class="formInput" type="test" placeholder="Select compaign">
                                     </div>
-                                    <div class="row-3">
+                                    <div class="row">
                                         <h3>Language</h3>
                                     </div>
                                 </div>
@@ -300,55 +301,55 @@
 <!-- first section of form -->
                         <div class="container">
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Name</h3></div>  
-                                <div class="col-8"><input type="text" class="form-control" id="input-name"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Name</h3></div>  
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-name"></div>
                             </div>
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Surname</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-surname"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Surname</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-surname"></div>
                             </div>
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>E-mail</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-email"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>E-mail</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-email"></div>
                             </div>
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Phone number</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-phone"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Phone number</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-phone"></div>
                             </div>
                         </div>
                         <hr>
 <!-- second section of form -->
                         <div class="container">
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Skype</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-skype"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Skype</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-skype"></div>
                             </div>
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>ICQ</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-icq"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>ICQ</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-icq"></div>
                             </div>
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Msn</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-msn"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Msn</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-msn"></div>
                             </div>
                         </div>
                         <hr>
 <!-- third section of form -->
                         <div class="container">
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Wallet</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-wallet"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Wallet</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-wallet"></div>
                             </div>
                         </div>
                         <hr>
 <!-- fourth section of form -->
                         <div class="container">
                             <div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Password</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-password"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Password</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-password"></div>
                             </div><div class="row form-group formInput">
-                                <div class="col-4 label"><h3>Repeat</h3></div>
-                                <div class="col-8"><input type="text" class="form-control" id="input-password2"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Repeat</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-password2"></div>
                             </div>
                         </div>
                         <hr>

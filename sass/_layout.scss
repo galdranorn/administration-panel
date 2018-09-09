@@ -8,7 +8,26 @@ body {
     position: relative;
 }
 
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+  }
+  
+  .container-fluid {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+  }
+
 /* GRID */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+  }
+
 
 .row::before, .row::after {
 	content: "";
@@ -21,10 +40,9 @@ body {
 	min-height: 1px;
 	padding: 5px;
 	text-align: justify;
-	/* THIS LINE SHOWS THE GRIDS */
-	//border: 0px solid #000;
+	//THIS LINE SHOWS THE GRIDS
+	border: 0px solid #000;
 }
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -50,3 +68,52 @@ body {
 .col-offset-9 {margin-left: 75%;}
 .col-offset-10 {margin-left: 83.33%;}
 .col-offset-11 {margin-left: 91.66%;}
+
+//responsive grid
+
+@for $i from 1 through 12 {
+	.col-sm-#{$i} {
+	  $width: 100% / 12 * $i;
+	  flex: 0 0 $width;
+	  max-width: $width;
+	}
+  }
+  @for $i from 1 through 12 {
+	.col-md-#{$i} {
+	  $width: 100% / 12 * $i;
+	  flex: 0 0 $width;
+	  max-width: $width;
+	}
+  }
+  @for $i from 1 through 12 {
+	.col-lg-#{$i} {
+	  $width: 100% / 12 * $i;
+	  flex: 0 0 $width;
+	  max-width: $width;
+	}
+  }
+  @for $i from 1 through 12 {
+	.col-xl-#{$i} {
+	  $width: 100% / 12 * $i;
+	  flex: 0 0 $width;
+	  max-width: $width;
+	}
+  }
+  // rensponsive grid prefix
+  @mixin grid($prefix) {
+	@for $i from 1 through 12 {
+	  .col-#{$prefix}-#{$i} {
+		$width: 100% / 12 * $i;
+		flex: 0 0 $width;
+		max-width: $width;
+	  }
+	}
+  }
+  @mixin unvisible {
+	.unvisible-sm {display: none;}
+  }
+// grid for widths
+  @media(max-width: 767px) {@include grid('sm');@include unvisible();}
+  @media(min-width: 768px) {@include grid('md');}
+  @media(min-width: 992px) {@include grid('lg');}
+  @media(min-width: 1200px) {@include grid('xl');}

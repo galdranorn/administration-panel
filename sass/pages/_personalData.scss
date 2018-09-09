@@ -11,3 +11,11 @@
         margin: 20px auto;
     }
 }
+
+@media(max-width: 992px) {
+    .form-group {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        }
+}

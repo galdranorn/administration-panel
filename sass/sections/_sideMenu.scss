@@ -5,6 +5,9 @@
     background: $sideMenu;
     position: fixed;
     z-index: 3;
+    .container {
+        padding: 0;
+    }
     .hamburger {
         text-align: center;
         padding-top: 10px;
@@ -16,7 +19,7 @@
     }
     .menuLine {
         height: 40px;
-        display: block;
+        //display: block;
         position: relative;
         padding-top: 5px;
         &:hover {

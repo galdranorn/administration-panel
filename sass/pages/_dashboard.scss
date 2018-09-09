@@ -2,7 +2,11 @@
 .generalStatistics {
     .inputDateBox {margin: 20px auto;}
 	.tableWithDigit {margin: 20px auto;}
-	.chart {text-align: center;}
+    .chart {text-align: center; 
+        img {
+            width: 100%; 
+            height: auto;
+        }
     .tabs {
         margin: 20px auto;
         text-align: center;
@@ -35,4 +39,4 @@
         .tableText {width: 40%;}
         .tableLink {width: 60%;text-align: left;}
     }
-}
+}}
