@@ -1,13 +1,13 @@
 // MODAL FOR ADDING LINKS 
 
-var addLinkModal = document.getElementById('addLinkModal');
-var addLinkBtn = document.getElementById("addLinkBtn");
-var addLinkModalClose = document.getElementsByClassName("close")[0];
 
-addLinkBtn.onclick = function() {addLinkModal.style.display = "block";}
-addLinkModalClose.onclick = function() {addLinkModal.style.display = "none";}
+var quitModal = document.getElementById('quitModal');
+var quitBtn = document.getElementById("quitBtn");
+
+quitBtn.onclick = function() {quitModal.style.display = "block";}
+quitModalClose.onclick = function() {quitModal.style.display = "none";}
 window.onclick = function(event) {
-    if (event.target == addLinkModal) {
-        addLinkModal.style.display = "none";
+    if (event.target == quitModal) {
+        quitModal.style.display = "none";
     }
-} 
+}

@@ -28,7 +28,7 @@
                     <span class="profile">Leonardo Dicaprio</span>
                 </a>
                 </button>
-            <button class="topMenuBtn">
+            <button class="topMenuBtn" id="quitBtn">
                 <img class="icon" src="images/icons/quit.svg" alt="">
             </button>       
         </header>
@@ -144,73 +144,6 @@
                         <div class="addLink" id="addLinkBtn">
                             <button class="btn themeBtn">+ add new</button><br>
                         </div>
-<!-- add link modal -->
-                        <div id="addLinkModal" class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <h2>Add url</h2><hr>
-                                <div class="row topRow">
-                                    <div class="col-9 inputForm">
-                                        <h3>Scheme name</h3><br>
-                                        <input class="formInput" type="text" placeholder="Name">
-                                        <input class="formInput" type="test" placeholder="Select compaign">
-                                    </div>
-                                    <div class="row">
-                                        <h3>Language</h3>
-                                    </div>
-                                </div>
-                                <hr>
-                                <h3>Select websites</h3>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP Wallet<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">E-Shop 01<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Toy Store<input type="checkbox" checked><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Book Store<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Charity<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP Icons Store<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Templates Store<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Random text<input type="checkbox"><span class="checkmark"></span></label><br>
-                                    </div>
-                                    <div class="col-4">
-                                        <label class="checkboxLine">Mobile App<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP Senator free signals<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP DE Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Invest wisely<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Toy Store LP Sign up page<input type="checkbox" checked><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Senator Account types<input type="checkbox" checked><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Senator Mobile app<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Senator Store<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Senator April Promo<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Language Learning LP<input type="checkbox"><span class="checkmark"></span></label><br>
-                                    </div>
-                                    <div class="col-4">
-                                        <label class="checkboxLine">Your second site<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Your second LP<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP Wallet<input type="checkbox" checked><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">E-Shop 01<input type="checkbox" checked><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Toy Store<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Book Store<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">Mobile app<input type="checkbox"><span class="checkmark"></span></label><br>
-                                        <label class="checkboxLine">LP Senator free signals<input type="checkbox"><span class="checkmark"></span></label><br>
-                                    </div>
-                                </div><hr> 
-                                <div class="row bottomRow">
-                                    <div class="col-9 inputForm">
-                                        <input class="formInput" type="text" placeholder="Generated link"> 
-                                    </div>      
-                                    <div class="col-3 buttons">                 
-                                        <button class="btn disabledBtn"><img src="images/icons/links.svg" alt="">Copy link</button>
-                                        <button class="btn themeBtn">Save</button><br>
-                                    </div>
-                                </div>
-                            </div>
- 
- </div> 
 <!-- table with links -->
                         <div class="container">
                             <table class="table tableWithLink">
@@ -248,14 +181,14 @@
                             </table>
                         </div>
 <!-- add link button -->
-                        <div class="addLink">
+                        <div class="addLink" id="addLinkBtn2">
                             <button class="btn themeBtn">+ add new</button><br>
                         </div>
                     </div>
             </section>
             
 <!-- BANNERS -->
-            <section class="banners" id="banners">
+            <section class="banners unvisible" id="banners">
                 <div class="smallBox bannersDiv">
                     <h2>Banners</h2><hr>  
 <!--add banner button-->
@@ -294,7 +227,7 @@
             </section>
 
 <!-- PERSONAL DATA -->
-            <section class="personalData" id="personalData">           
+            <section class="personalData unvisible" id="personalData">           
                 <div class="smallBox">
                     <h2>Personal data</h2><hr>
                     <form class="inputForm">
@@ -360,7 +293,7 @@
             </section>
 
 <!-- PAYOUT -->
-            <section class="payout" id="payout">
+            <section class="payout unvisible" id="payout">
                 <div class="smallBox">
                     <h2>Payout history</h2><hr>
                     <div class="inputDateBox">
@@ -437,7 +370,7 @@
             </section>
 
 <!-- DETAILS -->
-<section class="details" id="details">
+<section class="details unvisible" id="details">
     <div class="smallBox">
         <h2>DETAILS</h2><hr>
 <!-- input date box -->        
@@ -577,10 +510,99 @@
         </div>
 </section>
 
+<!-- ALL POP-UPS -->
+
+<!-- ADD LINK POP UP -->
+
+
+<!-- add link modal -->
+<div id="addLinkModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add url</h2><hr>
+            <div class="row topRow">
+                <div class="col-9 inputForm">
+                    <h3>Scheme name</h3><br>
+                    <input class="formInput" type="text" placeholder="Name">
+                    <input class="formInput" type="text" placeholder="Select compaign">
+                </div>
+                <div class="row">
+                    <h3>Language</h3>
+                </div>
+            </div>
+            <hr>
+            <h3>Select websites</h3>
+            <div class="row">
+                <div class="col-4">
+                    <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP Wallet<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">E-Shop 01<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Toy Store<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Book Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Charity<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP Icons Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Templates Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Random text<input type="checkbox"><span class="checkmark"></span></label><br>
+                </div>
+                <div class="col-4">
+                    <label class="checkboxLine">Mobile App<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP Senator free signals<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP DE Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Invest wisely<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Toy Store LP Sign up page<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Senator Account types<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Senator Mobile app<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Senator Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Senator April Promo<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Language Learning LP<input type="checkbox"><span class="checkmark"></span></label><br>
+                </div>
+                <div class="col-4">
+                    <label class="checkboxLine">Your second site<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Your second LP<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP Wallet<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">E-Shop 01<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Toy Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Book Store<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">Mobile app<input type="checkbox"><span class="checkmark"></span></label><br>
+                    <label class="checkboxLine">LP Senator free signals<input type="checkbox"><span class="checkmark"></span></label><br>
+                </div>
+            </div><hr> 
+            <div class="row bottomRow">
+                <div class="col-9 inputForm">
+                    <input class="formInput" type="text" placeholder="Generated link"> 
+                </div>      
+                <div class="col-3 buttons">                 
+                    <button class="btn disabledBtn"><img src="images/icons/links.svg" alt="">Copy link</button>
+                    <button class="btn themeBtn">Save</button><br>
+                </div>
+            </div>
+        </div>
+
+</div> 
+
+<!-- ADD BUTTON POP UP -->
+<!-- LOGIN POP UP -->
+<!-- QUIT POP UP -->
+
+<div id="quitModal" class="modl">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Do you really want to quit?</p>
+            <div class="buttons">
+                <button class="btn greyBtn">Cancel</button>
+                <button class="btn themeBtn">Quit</button>
+            </div>
+
+
 <!-- SECTION FOR CONTENTS FINISHES -->
 
         </div>
         <script src="node_modules/js-datepicker/datepicker.js"></script> 
-        <script src="js/switchPages.js"></script> 
+        <script src="js/switchPages.js"></script>
+        <script src="js/addLinks.js"></script>
+        <script src="js/script.js"></script> 
     </body>
 </html>
