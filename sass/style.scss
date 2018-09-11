@@ -28,6 +28,9 @@
 .unvisible {
     display: none;
   }
+.visible-sm {
+    display: none;
+}
 
 @media(max-width: 767px) {
     .sideMenu {
@@ -35,11 +38,25 @@
         min-width: 180px;
         float: left;
         height: auto;
+        .logo, .hamburger {
+            height: 50px;
+            background: white;
+        }
+        .visible-sm {
+            display: inline-block;
+        }
         #dropdown-content {
             width: 100%;
+            background: white;
+            a {
+                color: black;
+            }
         }
     }
     .topMenu {
+        top: 0;
+        right: 0;
+        height: 50px;
         .topMenuBtn{
             .money {
                 margin: 0;
@@ -48,6 +65,10 @@
     }
     .unvisible-menu, .unvisible-sm {
         display: none;
+    }
+    .mainBox {
+        left: 0;
+        width: 100%;
     }
 
 /* ---- SLIDER ---- */

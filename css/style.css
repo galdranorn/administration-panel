@@ -1812,6 +1812,10 @@ a:hover {
   display: none;
 }
 
+.visible-sm {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .sideMenu {
     width: 30%;
@@ -1819,14 +1823,34 @@ a:hover {
     float: left;
     height: auto;
   }
+  .sideMenu .logo, .sideMenu .hamburger {
+    height: 50px;
+    background: white;
+  }
+  .sideMenu .visible-sm {
+    display: inline-block;
+  }
   .sideMenu #dropdown-content {
     width: 100%;
+    background: white;
+  }
+  .sideMenu #dropdown-content a {
+    color: black;
+  }
+  .topMenu {
+    top: 0;
+    right: 0;
+    height: 50px;
   }
   .topMenu .topMenuBtn .money {
     margin: 0;
   }
   .unvisible-menu, .unvisible-sm {
     display: none;
+  }
+  .mainBox {
+    left: 0;
+    width: 100%;
   }
   /* ---- SLIDER ---- */
   .quitModal {
