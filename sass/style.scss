@@ -29,6 +29,27 @@
     display: none;
   }
 
+@media(max-width: 767px) {
+    .sideMenu {
+        width: 30%;
+        min-width: 180px;
+        float: left;
+        height: auto;
+        #dropdown-content {
+            width: 100%;
+        }
+    }
+    .topMenu {
+        .topMenuBtn{
+            .money {
+                margin: 0;
+            }
+        }
+    }
+    .unvisible-menu, .unvisible-sm {
+        display: none;
+    }
+
 /* ---- SLIDER ---- */
 
 .quitModal {
@@ -40,7 +61,7 @@
         padding: 10px;
     }
 }
-
+}
 
 
 

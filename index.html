@@ -16,7 +16,7 @@
             <button class="topMenuBtn">
                 <img class="icon" src="images/icons/wallet.svg" alt="">
                 <span class="money">1,500.00$</span>
-                <img class="smallIcon" src="images/icons/arrow-down-small.svg" alt="">
+                <img class="smallIcon unvisible-sm" src="images/icons/arrow-down-small.svg" alt="">
             </button>
             <button class="topMenuBtn">
                 <img class="icon" src="images/icons/notification.svg" alt="">
@@ -25,24 +25,26 @@
             <button class="topMenuBtn">
                 <a href="#">
                     <img class="icon" src="images/icons/profile.svg" alt="">
-                    <span class="profile">Leonardo Dicaprio</span>
+                    <span class="profile unvisible-sm">Leonardo Dicaprio</span>
                 </a>
                 </button>
             <button class="topMenuBtn" id="quitBtn">
-                <img class="icon" src="images/icons/quit.svg" alt="">
+                <img class="icon unvisible-sm" src="images/icons/quit.svg" alt="">
             </button>       
         </header>
 
 <!-- SIDE MENU -->
-        <section class="sideMenu">
+        <section class="sideMenu menuBig">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 logo"><a href="http://galdranorn.github.io/administration-panel/"><img src="images/logo.png" alt="logo"></a></div>
-                    <div class="col-md-4 hamburger"><a href="#"><span class="fa fa-bars"></span></a></div>
+                    <div class="col-md-4 hamburger" id="dropdown-toggle"><a href="#"><span class="fa fa-bars"></span></a></div>
                 </div>
+            </div>
+            <div class="container unvisible-menu" id="dropdown-content">
                 <div class="row menuLine" id="menuGeneral">
-                    <div class="col-md-4 unvisible-sm icon"><img src="images/icons/general.svg" alt=""></div>
-                    <div class="col-md-8 unvisible-sm text"><a href="#">General</a></div>
+                    <div class="col-md-4 icon"><img src="images/icons/general.svg" alt=""></div>
+                    <div class="col-md-8 text"><a href="#">General</a></div>
                 </div>
                 <div class="row menuLine" id="menuDetails">
                     <div class="col-md-4 icon"><img src="images/icons/details.svg" alt=""></div>
@@ -75,7 +77,6 @@
                     <h2>Your manager</h2>
                     Here will be manager :-)
                 </div>
-            
             </div>
         </section>
 
@@ -613,6 +614,7 @@
 
         </div>
         <script src="node_modules/js-datepicker/datepicker.js"></script> 
+        <script src="js/sideMenuMobile.js"></script>
         <script src="js/switchPages.js"></script>
         <script src="js/addLinks.js"></script>
         <script src="js/script.js"></script> 
