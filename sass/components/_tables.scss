@@ -1,4 +1,4 @@
-/* ---- TABLES WITH LINK AND DIGIT ---- */
+/* ---- TABLES WITH DIGIT ---- */
 
 .table {
     border-collapse: collapse;
@@ -17,7 +17,30 @@
     }
 }
 
-.tableWithLink, .tableWithSorting {
+.tableWithDigit {
+    .tableDigit {
+        width: 50px;
+    }
+}
+
+
+
+/* TABLE WITH LINK */ 
+.tableWithLink {
+    .row {
+        border-bottom: 1px solid $grey2;
+        margin: 0;
+        padding-top: 5px;
+        height: auto;
+        padding: 5px;
+        &:hover {
+            background: $grey2;
+            cursor: pointer;
+        }
+    }
+}
+
+.tableWithSorting {
     tbody{
         tr {
             height: 40px;
@@ -32,12 +55,6 @@
                 text-align: center;
             }
         }
-    }
-}
-
-.tableWithDigit {
-    .tableDigit {
-        width: 50px;
     }
 }
 

@@ -1,7 +1,6 @@
 
 /* GLOBAL MAIN & SMALL BOX */
 .mainBox {
-    
     position: absolute;
     z-index: 0;
     top: 50px;
@@ -23,9 +22,6 @@
             width: 80%;
             margin-left: 10%;
             padding: 10px;
-            .row {
-                margin: 10px;
-            }
         }
     }
 }
