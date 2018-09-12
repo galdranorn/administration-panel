@@ -18,11 +18,11 @@
                 <span class="money">1,500.00$</span>
                 <img class="smallIcon unvisible-sm" src="images/icons/arrow-down-small.svg" alt="">
             </button>
-            <button class="topMenuBtn">
+            <button class="topMenuBtn" id="notificationBtn">
                 <img class="icon" src="images/icons/notification.svg" alt="">
                 <span class="dot"></span>
                 </button>
-            <button class="topMenuBtn">
+            <button class="topMenuBtn" id="loginBtn">
                 <a href="#">
                     <img class="icon" src="images/icons/profile.svg" alt="">
                     <span class="profile unvisible-sm">Leonardo Dicaprio</span>
@@ -248,16 +248,16 @@
 <!-- first section of form -->
                         <div class="container">
                             <div class="row form-group formInput">
-                                <div class="col-md-4 col-sm-12 label"><h3>Name</h3></div>  
-                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-name"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Name*</h3></div>  
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-name" required></div>
                             </div>
                             <div class="row form-group formInput">
-                                <div class="col-md-4 col-sm-12 label"><h3>Surname</h3></div>
-                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-surname"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Surname*</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-surname" required></div>
                             </div>
                             <div class="row form-group formInput">
-                                <div class="col-md-4 col-sm-12 label"><h3>E-mail</h3></div>
-                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-email"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>E-mail*</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="email" class="form-control" id="input-email" required></div>
                             </div>
                             <div class="row form-group formInput">
                                 <div class="col-md-4 col-sm-12 label"><h3>Phone number</h3></div>
@@ -284,8 +284,8 @@
 <!-- third section of form -->
                         <div class="container">
                             <div class="row form-group formInput">
-                                <div class="col-md-4 col-sm-12 label"><h3>Wallet</h3></div>
-                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-wallet"></div>
+                                <div class="col-md-4 col-sm-12 label"><h3>Wallet*</h3></div>
+                                <div class="col-md-8 col-sm-12"><input type="number" class="form-control" id="input-wallet" min="10" max="999999" step="10" required></div>
                             </div>
                         </div>
                         <hr>
@@ -293,10 +293,10 @@
                         <div class="container">
                             <div class="row form-group formInput">
                                 <div class="col-md-4 col-sm-12 label"><h3>Password</h3></div>
-                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-password"></div>
+                                <div class="col-md-8 col-sm-12"><input type="password" class="form-control" id="input-password"></div>
                             </div><div class="row form-group formInput">
                                 <div class="col-md-4 col-sm-12 label"><h3>Repeat</h3></div>
-                                <div class="col-md-8 col-sm-12"><input type="text" class="form-control" id="input-password2"></div>
+                                <div class="col-md-8 col-sm-12"><input type="password" class="form-control" id="input-password2"></div>
                             </div>
                         </div>
                         <hr>
@@ -317,58 +317,56 @@
                         <span class="far fa-calendar-alt"></span>
                     </div> 
 <!-- table with data -->
-                    <div class="scroll-wrapper">
-                        <table class="table tableWithSorting">
-                            <thead><tr>
-                                <td class="col-3"><button class="sortingBtn">Date<i class="arrow down"></i></button></td>
-                                <td class="col-3"><button class="sortingBtn">Amount<i class="arrow down"></i></button></td>
-                                <td class="col-3"><button class="sortingBtn">Deal<i class="arrow down"></i></button></td>
-                                <td class="col-3"><button class="sortingBtn">Account<i class="arrow down"></i></button></td>
-                            </tr></thead>
-                            <tbody><tr>
-                                <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>34,425.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr><tr>
-                                <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>29,436.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr><tr>
-                                <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>34,425.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr><tr>
-                                <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>29,436.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr><tr>
-                                <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>34,425.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr><tr>
-                                <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>29,436.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr><tr>
-                                <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>34,425.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr><tr>
-                                <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                                <td class="col-3 tableText"><p>29,436.00</p></td>
-                                <td class="col-3 tableText"><p>cpl(200)</p></td>
-                                <td class="col-3 tableText"><p>bank</p></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <table class="table tableWithSorting">
+                        <thead><tr>
+                            <td class="col-3"><button class="sortingBtn">Date<i class="arrow down"></i></button></td>
+                            <td class="col-3"><button class="sortingBtn">Amount<i class="arrow down"></i></button></td>
+                            <td class="col-3"><button class="sortingBtn">Deal<i class="arrow down"></i></button></td>
+                            <td class="col-3"><button class="sortingBtn">Account<i class="arrow down"></i></button></td>
+                        </tr></thead>
+                        <tbody><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>34,425.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr><tr>
+                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
+                            <td class="col-3 tableText"><p>29,436.00</p></td>
+                            <td class="col-3 tableText"><p>cpl(200)</p></td>
+                            <td class="col-3 tableText"><p>bank</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
 <!-- pagination -->                    
                     <div class="pagination">
                         <img src="images/icons/arrow-left.svg">
@@ -398,7 +396,6 @@
         </div> 
 
 <!-- table with data -->
-        <div class="scroll-wrapper">
             <table class="table tableWithSorting">
                 <thead><tr>
                     <td class="col-1"><button class="sortingBtn">Tracker name</button></td>
@@ -511,7 +508,6 @@
                     <td class="col-1 tableText"><p>cpl(200)</p></td>
                 </tr></tbody>
             </table>
-        </div>
 <!-- pagination -->        
         <div class="pagination">
             <img src="images/icons/arrow-left.svg">
@@ -527,6 +523,50 @@
             <img src="images/icons/arrow-right.svg">
         </div>
 </section>
+
+<!-- POSTBACK -->
+
+<section class="postback unvisible" id="postback">
+        <div class="smallBox">
+            <h2>Postback</h2><hr>
+            <div class="container-fluid">
+                <p>You can insert some parameters in this postback</p>
+                <div class="row">
+                    <div class="inputForm col-6 col-md-6 col-sm-12">
+                        <h3>Signup</h3>
+                        <textarea id="postbackSignup" rows="5" placeholder="crm_userid=%user_id% subid=%p%"></textarea>
+                    </div>
+                    <div class="inputForm col-6 col-md-6 col-sm-12">
+                        <h3>Deposit</h3>
+                        <textarea id="postbackDeposit" rows="5" placeholder="crm_userid=%user_id% subid=%p%"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inputForm col-4 col-md-4 col-sm-12">
+                        <h3>Postback type</h3>
+                        <input type="text" placeholder="S2S(https://...">
+                    </div>
+                    <div class="inputForm col-4 col-md-4 col-sm-12">
+                        <h3>To countries</h3>
+                        <input type="text" placeholder="choose countries">
+                    </div>
+                    <div class="inputForm col-4 col-md-4 col-sm-12">
+                        <h3>Sending options</h3>
+                        <input type="text" placeholder="Select">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-6 col-sm-12">
+                        <h3><span>NOT </span>send statuses</h3>                        
+                    </div>
+                    <div class="col-6 col-md-6 col-sm-12">
+                        <input type="range" min="10" max="100000" step="10">
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
 
 <!-- ALL POP-UPS -->
 
@@ -589,7 +629,7 @@
                 </div>
             </div><hr> 
             <div class="row bottomRow">
-                <div class="col-9 col-md-12 col-sm-12 inputForm">
+                <div class="col-9 col-md-12 col-sm-12 inputForm"></div>
                     <input class="formInput" type="text" placeholder="Generated link"> 
                 </div>      
                 <div class="col-3  col-md-12 col-sm-12 buttons">                 
@@ -602,18 +642,45 @@
 </div> 
 
 <!-- ADD BUTTON POP UP -->
-<!-- LOGIN POP UP -->
+
 <!-- QUIT POP UP -->
 
-<div id="quitModal" class="modl">
+<div id="quitModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <p>Do you really want to quit?</p>
             <div class="buttons">
-                <button class="btn greyBtn">Cancel</button>
-                <button class="btn themeBtn">Quit</button>
+                <button class="btn greyBtn" id="quitCancelBtn">Cancel</button>
+                <button class="btn themeBtn" id="quitQuitBtn">Quit</button>
             </div>
+        </div>
+</div>
 
+<!-- LOGIN POP UP -->
+
+<div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>LOGIN</h2><hr>
+            <div class="row inputForm">
+                <div class="col-4 col-md-4 col-sm-12"><input class="formInput" type="text" placeholder="login"></div>
+                <div class="col-4 col-md-4 col-sm-12"><input class="formInput" type="password" placeholder="password"></div>
+                <div class="btnDiv col-4 col-md-4 col-sm-12"><button class="btn themeBtn">Enter</button></div>
+            </div>
+            
+        </div>
+</div>
+
+<!-- NOTIFICATION POP UP -->
+
+<div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Notifications</h2><hr>
+            <p>No alerts!</p>
+            <div><button class="btn themeBtn" id="okayBtn">Okay</button></div>
+        </div>
+</div>
 
 <!-- SECTION FOR CONTENTS FINISHES -->
 

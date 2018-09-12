@@ -16,7 +16,7 @@ var links = document.getElementById('links');
 var banners = document.getElementById('banners');
 var personalData = document.getElementById('personalData');
 var payout = document.getElementById('payout');
-//var postback = document.getElementById('postback');
+var postback = document.getElementById('postback');
 // functions for buttons
 menuGeneral.addEventListener('click', function(){
     general.classList.remove('unvisible');
@@ -77,4 +77,14 @@ menuPayout.addEventListener('click', function(){
     personalData.classList.add('unvisible');
     payout.classList.remove('unvisible');
     postback.classList.add('unvisible');
+});
+menuPostback.addEventListener('click', function(){
+    general.classList.add('unvisible');
+    statistics.classList.add('unvisible');
+    links.classList.add('unvisible');
+    details.classList.add('unvisible');
+    banners.classList.add('unvisible');
+    personalData.classList.add('unvisible');
+    payout.classList.add('unvisible');
+    postback.classList.remove('unvisible');
 });

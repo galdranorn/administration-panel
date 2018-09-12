@@ -72,7 +72,27 @@
 }
 }
 
+#notificationModal, #quitModal {
+    .modal-content {
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    p { padding: 20px;
+        text-align: center;}
+    div {text-align: center;}
+    }
+}
 
+#loginModal {
+    .modal-content {
+    width: 70%;
+    max-width: 700px;
+    min-width: 400px;
+    button {
+        width: 100%;
+    }
+    }
+}
 
 
 /* ---- MESSENGER ----*/
