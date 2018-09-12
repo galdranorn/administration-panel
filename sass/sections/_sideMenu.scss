@@ -54,3 +54,40 @@
         border-color: $greyButton;
     }
 }
+
+@media(max-width: 767px) {
+    .mainBox {
+        width: 100%;
+        .smallBox {
+            margin: 20px 0;
+            .container {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .dashboard {
+            .container {
+                padding: 10px 0;
+            }
+        }
+    }
+    .sideMenu {
+        width: 30%;
+        min-width: 180px;
+        float: left;
+        height: auto;
+        .logo, .hamburger {
+            height: 50px;
+            background: white;
+        }
+        .visible-sm {
+            display: inline-block;
+        }
+        #dropdown-content {
+            width: 100%;
+            background: white;
+            a {
+                color: black;
+            }
+        }
+    }}

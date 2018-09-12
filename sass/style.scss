@@ -14,9 +14,9 @@
 @import "components/pagination";
 
 /* Sections */
+@import "sections/mainSmallBox";
 @import "sections/sideMenu";
 @import "sections/topMenu";
-@import "sections/mainSmallBox";
 @import "sections/addLinkModal";
 
 /* Pages */
@@ -33,31 +33,13 @@
 }
 
 @media(max-width: 767px) {
-    .sideMenu {
-        width: 30%;
-        min-width: 180px;
-        float: left;
-        height: auto;
-        .logo, .hamburger {
-            height: 50px;
-            background: white;
-        }
-        .visible-sm {
-            display: inline-block;
-        }
-        #dropdown-content {
-            width: 100%;
-            background: white;
-            a {
-                color: black;
-            }
-        }
-    }
     .topMenu {
         top: 0;
         right: 0;
         height: 50px;
         .topMenuBtn{
+            top: 0;
+            height: 100%;
             .money {
                 margin: 0;
             }
@@ -70,6 +52,12 @@
         left: 0;
         width: 100%;
     }
+    .links, .banners, .personalData {
+        h3, a {
+        display: block;
+            text-align: center;
+    }
+}
 
 /* ---- SLIDER ---- */
 
