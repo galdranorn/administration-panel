@@ -33,6 +33,7 @@
         padding-top: 5px;
         height: auto;
         padding: 5px;
+        display: block;
         &:hover {
             background: $grey2;
             cursor: pointer;
@@ -49,6 +50,7 @@
             }
             td {
                 border-top: 1px solid $grey2;
+                display: inline-block;
             }
             .tableLink {
                 width: 60px;
@@ -58,3 +60,13 @@
     }
 }
 
+.scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .scroll-wrapper table {
+    width: 100%;
+    max-width: 100%;
+  }

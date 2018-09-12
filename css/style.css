@@ -397,7 +397,7 @@ a:hover { color: #F58220; cursor: pointer; }
 .tableWithDigit .tableDigit { width: 50px; }
 
 /* TABLE WITH LINK */
-.tableWithLink .row { border-bottom: 1px solid #E3E3E3; margin: 0; padding-top: 5px; height: auto; padding: 5px; }
+.tableWithLink .row { border-bottom: 1px solid #E3E3E3; margin: 0; padding-top: 5px; height: auto; padding: 5px; display: block; }
 
 .tableWithLink .row:hover { background: #E3E3E3; cursor: pointer; }
 
@@ -405,9 +405,13 @@ a:hover { color: #F58220; cursor: pointer; }
 
 .tableWithSorting tbody tr:hover { background-color: #F5F5F2; }
 
-.tableWithSorting tbody tr td { border-top: 1px solid #E3E3E3; }
+.tableWithSorting tbody tr td { border-top: 1px solid #E3E3E3; display: inline-block; }
 
 .tableWithSorting tbody tr .tableLink { width: 60px; text-align: center; }
+
+.scroll-wrapper { display: block; width: 100%; overflow-x: auto; }
+
+.scroll-wrapper table { width: 100%; max-width: 100%; }
 
 /* ---- INPUTS ---- */
 .boxInput { width: 200px; padding: 10px; }
