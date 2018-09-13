@@ -8,6 +8,8 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="node_modules/js-datepicker/datepicker.css">
+        <link rel="stylesheet" href="node_modules/tablesaw/dist/tablesaw.css">
+        node_modules\tablesaw\dist\stackonly
     </head>
 
     <body>
@@ -317,55 +319,54 @@
                         <span class="far fa-calendar-alt"></span>
                     </div> 
 <!-- table with data -->
-                    <table class="table tableWithSorting">
+                    <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                         <thead><tr>
-                            <td class="col-3"><button class="sortingBtn">Date<i class="arrow down"></i></button></td>
-                            <td class="col-3"><button class="sortingBtn">Amount<i class="arrow down"></i></button></td>
-                            <td class="col-3"><button class="sortingBtn">Deal<i class="arrow down"></i></button></td>
-                            <td class="col-3"><button class="sortingBtn">Account<i class="arrow down"></i></button></td>
+                            <td scope="col" data-tablesaw-sortable-col class="col-3"><button class="sortingBtn">Date<i class="arrow down"></i></button></td>
+                            <td scope="col" data-tablesaw-sortable-col class="col-3"><button class="sortingBtn">Amount<i class="arrow down"></i></button></td>
+                            <td scope="col" data-tablesaw-sortable-col class="col-3"><button class="sortingBtn">Deal<i class="arrow down"></i></button></td>
+                            <td scope="col" data-tablesaw-sortable-col class="col-3"><button class="sortingBtn">Account<i class="arrow down"></i></button></td>
                         </tr></thead>
                         <tbody><tr>
-                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>34,425.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>17/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>34,425.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
                         </tr><tr>
-                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>29,436.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>15/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>29,436.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
                         </tr><tr>
-                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>34,425.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>17/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>34,425.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
                         </tr><tr>
-                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>29,436.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>15/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>29,436.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
                         </tr><tr>
-                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>34,425.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>17/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>34,425.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
                         </tr><tr>
-                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>29,436.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>15/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>29,436.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
                         </tr><tr>
-                            <td class="col-3 tableText"><p>17/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>34,425.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>17/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>34,425.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
                         </tr><tr>
-                            <td class="col-3 tableText"><p>15/08/02 (12:58)</p></td>
-                            <td class="col-3 tableText"><p>29,436.00</p></td>
-                            <td class="col-3 tableText"><p>cpl(200)</p></td>
-                            <td class="col-3 tableText"><p>bank</p></td>
-                        </tr>
-                        </tbody>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Date:</span>15/08/02 (12:58)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Amount:</span>29,436.00</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Deal:</span>cpl(200)</p></td>
+                            <td class="col-3 col-sm-12 tableText"><p><span class="unvisible visible-sm">Account:</span>bank</p></td>
+                        </tr></tbody>
                     </table>
 <!-- pagination -->                    
                     <div class="pagination">
@@ -396,7 +397,7 @@
         </div> 
 
 <!-- table with data -->
-            <table class="table tableWithSorting">
+            <table class="table tableWithSorting" data-tablesaw-mode="swipe">
                 <thead><tr>
                     <td class="col-1"><button class="sortingBtn">Tracker name</button></td>
                     <td class="col-2"><button class="sortingBtn">Initiated date<i class="arrow down"></i></button></td>
@@ -685,7 +686,9 @@
 <!-- SECTION FOR CONTENTS FINISHES -->
 
         </div>
-        <script src="node_modules/js-datepicker/datepicker.js"></script> 
+        <script src="node_modules/js-datepicker/datepicker.js"></script>
+        <script src="node_modules/tablesaw/dist/tablesaw-init.js"></script>
+        <script src="node_modules/tablesaw/dist/tablesaw.jquery.js"></script> 
         <script src="js/sideMenuMobile.js"></script>
         <script src="js/switchPages.js"></script>
         <script src="js/addLinks.js"></script>

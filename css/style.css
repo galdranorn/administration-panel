@@ -1888,6 +1888,21 @@ a:hover {
     display: block;
     text-align: center;
   }
+}
+
+@media (max-width: 767px) and (max-width: 640px) {
+  .payout .tableText {
+    padding-left: 10%;
+  }
+  .payout .tableText .visible-sm {
+    font-weight: bold;
+    color: #E3E3E3;
+    display: inline-block;
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
   /* ---- SLIDER ---- */
   .quitModal {
     width: 50%;
