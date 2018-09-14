@@ -58,3 +58,42 @@
     }
 }
 
+/* PAYOUT TABLE RESPONSIVE */
+
+#payoutTable {
+    width: 100%;
+    .labels {display: none;}
+    tr {
+        display: block;
+        width: 100%;
+        td {
+            display: inline-block;
+            margin: 0;
+            text-align: center;
+        }
+        .wide {width: 40%;}
+        .narrow {width: 19%;}
+    }
+}
+@media(max-width: 767px) {
+    #payoutTable {
+        .wide {width: auto;}
+        .narrow {width: auto;}
+    tbody {
+        .labels {
+            padding-left: 8%;
+            font-weight: bold;
+            color: $greyButtonHov;}
+        .labels, .values {
+            width: 49%;
+            display: inline-block;
+            border-bottom: 1px solid $grey2;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            td {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}}

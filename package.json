@@ -41,6 +41,7 @@
     "onchange": "^4.1.0"
   },
   "dependencies": {
+    "jquery-responsive-tables": "^2.0.1",
     "js-datepicker": "^3.3.2",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.1.3",

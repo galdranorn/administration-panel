@@ -1,3 +1,10 @@
+var payoutTable = document.getElementById("payoutTable"); 
+
+payoutTable.ready(function() {
+    $.responsiveTables();    
+});   
+
+
 // MODAL FOR ADDING LINKS 
 
 var quitModal = document.getElementById('quitModal');
