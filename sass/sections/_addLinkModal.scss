@@ -29,18 +29,20 @@
         }
     }
     .bottomRow {
+        text-align: center;
         width: 100%;
-        height: 50px;
-        padding: 10px 5px;
         .inputForm {
             display: inline-block;
+            .formInput {
+            width: 100%;
+            float: left;
+        }
         }
         .buttons {
             text-align: center;
             button {
-                display: inline-block;
-                margin: 0 10px;
-                width: 40%;
+                height: 30px;
+                //margin: 0 10px;
                 img {
                     width: 20px;
                     height: 20px;
@@ -61,6 +63,10 @@
     h2 {
         padding-top: 20px;
         padding-bottom: 5px;
+    }
+    .selectWebsites {
+        height: 300px;
+        overflow: scroll;
     }
 }
 

@@ -565,11 +565,24 @@
                     </div>
                     <div class="inputForm col-4 col-md-4 col-sm-12">
                         <h3>To countries</h3>
-                        <input type="text" placeholder="choose countries">
+                        <select name="toCountries">
+                            <option>Select country</option>
+                            <option value="poland">Poland</option>
+                            <option value="germany">Germany</option>
+                            <option value="slovakia">Slovakia</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                        </select>
                     </div>
                     <div class="inputForm col-4 col-md-4 col-sm-12">
                         <h3>Sending options</h3>
-                        <input type="text" placeholder="Select">
+                        <select name="sendingOptions">
+                            <option>Select</option>
+                            <option value="standard">standard</option>
+                            <option value="express">express</option>
+                            <option value="economic">economic</option>
+                            <option value="customized">customized</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
@@ -603,11 +616,18 @@
                 </div>
                 <div class="row">
                     <h3>Language</h3>
+                    <select name="language">
+                        <option value="uk">EN(UK)</option>
+                        <option value="us">EN(US)</option>
+                        <option value="de">DE</option>
+                        <option value="pl">PL</option>
+                        <option value="sk">SK</option>
+                    </select>
                 </div>
             </div>
             <hr>
             <h3>Select websites</h3>
-            <div class="row">
+            <div class="row selectWebsites">
                 <div class="col-4 col-lg-4 col-md-12 col-sm-12">
                     <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
                     <label class="checkboxLine">LP Your choice<input type="checkbox"><span class="checkmark"></span></label><br>
@@ -646,10 +666,10 @@
                 </div>
             </div><hr> 
             <div class="row bottomRow">
-                <div class="col-9 col-md-12 col-sm-12 inputForm"></div>
+                <div class="col-8 col-md-8 col-sm-12 inputForm">
                     <input class="formInput" type="text" placeholder="Generated link"> 
                 </div>      
-                <div class="col-3  col-md-12 col-sm-12 buttons">                 
+                <div class="col-3 col-md-3 col-sm-12 buttons">                 
                     <button class="btn disabledBtn"><img src="images/icons/links.svg" alt="">Copy link</button>
                     <button class="btn themeBtn">Save</button><br>
                 </div>

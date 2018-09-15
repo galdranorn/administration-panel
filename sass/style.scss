@@ -28,6 +28,16 @@
 .unvisible {display: none;}
 .visible-sm {display: none;}
 
+/* select */
+
+select {
+    width: 100%;
+    height: 38px;
+    border: 1px solid $grey2;
+    font-family: Open Sans;
+    color: $greyButtonHov;
+}
+
 /* pierdolowata zmiana */ 
 @media(max-width: 767px) {
     .topMenu {

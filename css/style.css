@@ -1693,13 +1693,17 @@ a:hover {
 }
 
 .modal .bottomRow {
+  text-align: center;
   width: 100%;
-  height: 50px;
-  padding: 10px 5px;
 }
 
 .modal .bottomRow .inputForm {
   display: inline-block;
+}
+
+.modal .bottomRow .inputForm .formInput {
+  width: 100%;
+  float: left;
 }
 
 .modal .bottomRow .buttons {
@@ -1707,9 +1711,7 @@ a:hover {
 }
 
 .modal .bottomRow .buttons button {
-  display: inline-block;
-  margin: 0 10px;
-  width: 40%;
+  height: 30px;
 }
 
 .modal .bottomRow .buttons button img {
@@ -1732,6 +1734,11 @@ a:hover {
 .modal-content h2 {
   padding-top: 20px;
   padding-bottom: 5px;
+}
+
+.modal-content .selectWebsites {
+  height: 300px;
+  overflow: scroll;
 }
 
 /* The Close Button */
@@ -1915,6 +1922,15 @@ a:hover {
 
 .visible-sm {
   display: none;
+}
+
+/* select */
+select {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #E3E3E3;
+  font-family: Open Sans;
+  color: #bababa;
 }
 
 /* pierdolowata zmiana */
