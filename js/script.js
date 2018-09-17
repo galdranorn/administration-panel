@@ -1,10 +1,3 @@
-var payoutTable = document.getElementById("payoutTable"); 
-
-payoutTable.ready(function() {
-    $.responsiveTables();    
-});   
-
-
 // MODAL FOR ADDING LINKS 
 
 var quitModal = document.getElementById('quitModal');
@@ -22,7 +15,7 @@ window.onclick = function(event) {
         quitModal.style.display = "none";
     }
 }
-
+/* LOGIN BTN */
 var loginBtn = document.getElementById('loginBtn');
 var loginModal = document.getElementById("loginModal");
 var loginModalClose = document.getElementsByClassName("close")[2];
@@ -34,6 +27,8 @@ window.onclick = function(event) {
         loginModal.style.display = "none";
     }
 }
+
+/* NOTIFICATIONS */
 
 var notificationBtn = document.getElementById('notificationBtn');
 var notificationModal = document.getElementById("notificationModal");
