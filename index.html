@@ -253,7 +253,7 @@
                     <h2>Banners</h2><hr>  
 <!--add banner button-->
                     <div class="addBanner">
-                        <button class="btn themeBtn">+ add new</button><br>
+                        <button class="btn themeBtn" id="addBannerBtn">+ add new</button><br>
                     </div>
 <!-- table with links -->
                     <div class="container tableWithLink">
@@ -284,7 +284,7 @@
                     </div>    
 <!-- add banner button -->
                     <div class="addBanner">
-                        <button class="btn themeBtn">+ add new</button><br>
+                        <button class="btn themeBtn" id="addBannerBtn2">+ add new</button><br>
                     </div>
                 </div>
             </section>
@@ -669,13 +669,23 @@
             <span class="close">&times;</span>
             <h2>Add url</h2><hr>
             <div class="row topRow">
-                <div class="col-9 col-md-9 col-sm-12 inputForm">
+                <div class="col-5 col-md-5 col-sm-12 inputForm">
                     <h3>Scheme name</h3><br>
                     <input class="formInput" type="text" placeholder="Name">
-                    <input class="formInput" type="text" placeholder="Select compaign">
                 </div>
-                <div class="row">
-                    <h3>Language</h3>
+                <div class="col-5 col-md-5 col-sm-12 inputForm">
+                    <h3>Select compaign</h3><br>
+                    <select name="selectCompaign">
+                        <option>Select compaign</option>
+                        <option value="kkc">Key customers compaign</option>
+                        <option value="ltc">Losing traffic compaign</option>
+                        <option value="cec">Christmas Eve compaign</option>
+                        <option value="mwc">Modern women compaign</option>
+                        <option value="hsc">High schools compaign</option>
+                    </select>
+                </div>
+                <div class="col-2 col-md-2 col-sm-12 inputForm">
+                    <h3>Language</h3><br>
                     <select name="language">
                         <option value="uk">EN(UK)</option>
                         <option value="us">EN(US)</option>
@@ -738,7 +748,116 @@
 
 </div> 
 
-<!-- ADD BUTTON POP UP -->
+<!-- ADD BANNER POP UP -->
+
+<div id="addBannerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="bannerModalClose">&times;</span>
+            <h2>Add button</h2><hr>
+            <div class="row topRow">
+                <div class="col-5 col-md-5 col-sm-12 inputForm">
+                    <h3>Scheme name</h3><br>
+                    <input class="formInput" type="text" placeholder="Name">
+                </div>
+                <div class="col-5 col-md-5 col-sm-12 inputForm">
+                    <h3>Select compaign</h3><br>
+                    <select name="selectCompaign">
+                        <option>Select compaign</option>
+                        <option value="kkc">Key customers compaign</option>
+                        <option value="ltc">Losing traffic compaign</option>
+                        <option value="cec">Christmas Eve compaign</option>
+                        <option value="mwc">Modern women compaign</option>
+                        <option value="hsc">High schools compaign</option>
+                    </select>
+                </div>
+                <div class="col-2 col-md-2 col-sm-12 inputForm">
+                    <h3>Language</h3><br>
+                    <select name="language">
+                        <option value="uk">EN(UK)</option>
+                        <option value="us">EN(US)</option>
+                        <option value="de">DE</option>
+                        <option value="pl">PL</option>
+                        <option value="sk">SK</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 col-md-4 col-sm-12">
+                    <h3>Weight-Height</h3><br>
+                    <select name="weightHeight">
+                        <option>Select</option>
+                        <option value="11">1:1</option>
+                        <option value="12">1:2</option>
+                        <option value="21">2:1</option>
+                        <option value="18">1:8</option>
+                        <option value="34">3:4</option>
+                    </select>
+                </div>
+                <div class="col-4 col-md-4 col-sm-12">
+                    <h3>Design</h3><br>
+                    <select name="design">
+                        <option>Select</option>
+                        <option value="mini">minimalistic</option>
+                        <option value="fancy">fancy</option>
+                        <option value="retro">retro</option>
+                        <option value="personal">personalized</option>
+                    </select>
+                </div>
+                <div class="col-4 col-md-4 col-sm-12">
+                    <h3>File type</h3><br>
+                    <select name="fileType">
+                        <option>All</option>
+                        <option value="svg">.svg</option>
+                        <option value="jpg">.jpg</option>
+                        <option value="png">.png</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="row select">
+                <div class="col-6 col-lg-6 col-md-12 col-sm-12">
+                    <h3>Select banners</h3>
+                    <div class="selectScroll">
+                        <label class="checkboxLine">Banner main<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Sign up banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Left banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Right banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Bottom banner<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Long Banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Personal cabinet banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Popup banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Action banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Attention banner<input type="checkbox"><span class="checkmark"></span></label><br>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6 col-md-12 col-sm-12">
+                    <h3>Select websites</h3>
+                    <div class="selectScroll">
+                        <label class="checkboxLine">Landing page Money<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">LP Your choise<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">LP Wallet<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">E-Shop 01<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Toy store<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Book store<input type="checkbox" checked><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Charity<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">LP Icons store<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">E-Shop 03<input type="checkbox"><span class="checkmark"></span></label><br>
+                        <label class="checkboxLine">Language learning app<input type="checkbox"><span class="checkmark"></span></label><br>
+                    </div>
+                </div>
+            </div><hr> 
+            <div class="row bottomRow">
+                <div class="col-8 col-md-8 col-sm-12 inputForm">
+                    <input class="formInput" type="text" placeholder="Generated link">
+                </div>      
+                <div class="col-3 col-md-3 col-sm-12 buttons">                 
+                    <button class="btn disabledBtn"><img src="images/icons/links.svg" alt="">Copy link</button>
+                    <button class="btn themeBtn">Save</button><br>
+                </div>
+            </div>
+        </div>
+
+</div> 
 
 <!-- QUIT POP UP -->
 

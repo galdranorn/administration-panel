@@ -1,10 +1,10 @@
-// MODAL FOR ADDING LINKS 
+// QUIT MODAL
 
 var quitModal = document.getElementById('quitModal');
 var quitBtn = document.getElementById("quitBtn");
 var quitCancelBtn = document.getElementById("quitCancelBtn");
 var quitQuitBtn = document.getElementById("quitQuitBtn");
-var quitModalClose = document.getElementsByClassName("close")[1];
+//var quitModalClose = document.getElementsByClassName("close")[1];
 
 quitBtn.onclick = function() {quitModal.style.display = "block";}
 quitModalClose.onclick = function() {quitModal.style.display = "none";}
@@ -15,6 +15,8 @@ window.onclick = function(event) {
         quitModal.style.display = "none";
     }
 }
+
+
 /* LOGIN MODAL */
 var loginBtn = document.getElementById('loginBtn');
 var loginModal = document.getElementById("loginModal");
