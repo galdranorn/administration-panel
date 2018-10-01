@@ -1619,23 +1619,14 @@ input[type=range]::-ms-thumb {
   padding-top: 5px;
 }
 
-.sideMenu .menuLine:hover {
-  background: #282828;
-  border-left: 4px solid #F58220;
-}
-
-.sideMenu .menuLine:hover .text a {
-  color: white;
-}
-
 .sideMenu .menuLine .icon {
   text-align: center;
-  color: black;
   display: inline-block;
   height: 40px;
 }
 
-.sideMenu .menuLine .icon img {
+.sideMenu .menuLine .icon svg {
+  fill: #E3E3E3;
   width: 20px;
   height: 20px;
 }
@@ -1650,6 +1641,19 @@ input[type=range]::-ms-thumb {
 
 .sideMenu .menuLine .text a {
   color: #bababa;
+}
+
+.sideMenu .menuLine:hover {
+  background: #282828;
+  border-left: 4px solid #F58220;
+}
+
+.sideMenu .menuLine:hover .text a {
+  color: white;
+}
+
+.sideMenu .menuLine:hover svg {
+  fill: white;
 }
 
 .sideMenu hr {
@@ -1875,10 +1879,11 @@ input[type=range]::-ms-thumb {
 .modal .bottomRow {
   text-align: center;
   width: 100%;
+  vertical-align: top;
 }
 
 .modal .bottomRow .inputForm {
-  display: inline-block;
+  float: left;
 }
 
 .modal .bottomRow .inputForm .formInput {
@@ -1888,10 +1893,20 @@ input[type=range]::-ms-thumb {
 
 .modal .bottomRow .buttons {
   text-align: center;
+  width: 100%;
+  float: right;
+}
+
+.modal .bottomRow .buttons .disabledBtn {
+  width: 55%;
+}
+
+.modal .bottomRow .buttons .themeBtn {
+  width: 40%;
 }
 
 .modal .bottomRow .buttons button {
-  height: 30px;
+  height: 40px;
 }
 
 .modal .bottomRow .buttons button img {
@@ -1918,7 +1933,7 @@ input[type=range]::-ms-thumb {
 
 .modal-content .selectWebsites {
   height: 300px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 /* The Close Button */
@@ -2130,7 +2145,7 @@ input[type=range]::-ms-thumb {
   background-color: #EC7171;
 }
 
-/* select */
+/* select*/
 select {
   width: 100%;
   height: 38px;

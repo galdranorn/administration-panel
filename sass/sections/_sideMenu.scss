@@ -22,19 +22,12 @@
         //display: block;
         position: relative;
         padding-top: 5px;
-        &:hover {
-            background: $sideMenuHov;
-            border-left: 4px solid $sideMenuBor;
-            .text a {
-                color: white;
-            }
-        }
         .icon {
             text-align: center;
-            color: black;
             display: inline-block;
             height: 40px;
-            img {
+            svg {
+                fill: $grey2;
                 width: 20px;
                 height: 20px;
             }
@@ -47,6 +40,16 @@
             height: 100%;
             a {
                 color: $greyButtonHov;
+            }
+        }
+        &:hover {
+            background: $sideMenuHov;
+            border-left: 4px solid $sideMenuBor;
+            .text a {
+                color: white;
+            }
+            svg {
+                fill: white;
             }
         }
     }
