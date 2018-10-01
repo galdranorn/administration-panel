@@ -5,9 +5,7 @@
     background: $sideMenu;
     position: fixed;
     z-index: 3;
-    .container {
-        padding: 0;
-    }
+    .container {padding: 0;}
     .hamburger {
         text-align: center;
         padding-top: 10px;
@@ -38,23 +36,49 @@
             font-family: $brandFont;
             display: inline-block;
             height: 100%;
-            a {
-                color: $greyButtonHov;
-            }
+            a {color: $greyButtonHov;}
         }
         &:hover {
             background: $sideMenuHov;
             border-left: 4px solid $sideMenuBor;
-            .text a {
-                color: white;
-            }
-            svg {
-                fill: white;
-            }
+            .text a {color: white;}
+            svg {fill: white;}
         }
     }
-    hr {
-        border-color: $greyButton;
+    hr {border-color: $greyButton;}
+    .yourManager {
+        .managerBtn {
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+            p {
+                color: $links;
+                display: block;
+                position: absolute;
+                top: 27px;
+                left: 70px;
+            }
+            span {
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: $green;
+                position: absolute;
+                top: 20px;
+                left: 52px;
+                z-index: 6;
+            }
+            &:hover {
+                background-color: $sideMenuHov;
+                p {color: $sideMenuBor;}
+            }
+        }
     }
 }
 

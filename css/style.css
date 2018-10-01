@@ -1660,6 +1660,46 @@ input[type=range]::-ms-thumb {
   border-color: #979797;
 }
 
+.sideMenu .yourManager .managerBtn {
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.sideMenu .yourManager .managerBtn img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.sideMenu .yourManager .managerBtn p {
+  color: #56819F;
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 70px;
+}
+
+.sideMenu .yourManager .managerBtn span {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #04AE00;
+  position: absolute;
+  top: 20px;
+  left: 52px;
+  z-index: 6;
+}
+
+.sideMenu .yourManager .managerBtn:hover {
+  background-color: #282828;
+}
+
+.sideMenu .yourManager .managerBtn:hover p {
+  color: #F58220;
+}
+
 @media (max-width: 767px) {
   .mainBox {
     width: 100%;
@@ -2145,7 +2185,7 @@ input[type=range]::-ms-thumb {
   background-color: #EC7171;
 }
 
-/* select*/
+/* select */
 select {
   width: 100%;
   height: 38px;
