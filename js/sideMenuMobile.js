@@ -1,4 +1,4 @@
-// ---------- PAGES CHANGING ------------- 
+// ---------- SIDE MENU MOBILE ------------- 
 
 var dropdownBtn = document.getElementById('dropdown-toggle');
 var menuContent = document.getElementById('dropdown-content');
@@ -7,3 +7,4 @@ var menuContent = document.getElementById('dropdown-content');
 dropdownBtn.addEventListener('click', function(){
     menuContent.classList.toggle('unvisible-menu'); 
 })
+

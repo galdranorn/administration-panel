@@ -34,8 +34,10 @@
     }
 }
 
+/* TABLE WITH SORTING */
+
 .tableWithSorting {
-    tbody{
+    tbody {
         tr {
             height: 40px;
             &:hover {
@@ -57,7 +59,7 @@
 .tableWrapper {
     display: block;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     table {
         width: 100%;
         max-width: 100%;

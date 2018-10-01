@@ -1107,8 +1107,8 @@ a:hover {
 
 /* ---- small sorting button for table with sorting ----*/
 .sortingBtn {
-  line-height: 20px;
-  font-size: 12px;
+  height: 30px;
+  font-size: 10px;
   font-family: "Open Sans";
   font-weight: bold;
   color: #bababa;
@@ -1242,6 +1242,7 @@ a:hover {
   cursor: pointer;
 }
 
+/* TABLE WITH SORTING */
 .tableWithSorting tbody tr {
   height: 40px;
 }
@@ -1263,7 +1264,7 @@ a:hover {
 .tableWrapper {
   display: block;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .tableWrapper table {
@@ -1691,6 +1692,33 @@ input[type=range]::-ms-thumb {
   }
 }
 
+/* responsive menu */
+@media (max-width: 767px) {
+  .topMenu {
+    top: 0;
+    right: 0;
+    height: 50px;
+  }
+  .topMenu .topMenuBtn {
+    top: 0;
+    height: 100%;
+  }
+  .topMenu .topMenuBtn .money {
+    margin: 0;
+  }
+  .unvisible-menu, .unvisible-sm {
+    display: none;
+  }
+  .mainBox {
+    left: 0;
+    width: 100%;
+  }
+  .links h3, .links a, .banners h3, .banners a, .personalData h3, .personalData a {
+    display: block;
+    text-align: center;
+  }
+}
+
 /* -------- TOP MENU --------- */
 .topMenu {
   position: fixed;
@@ -1710,6 +1738,7 @@ input[type=range]::-ms-thumb {
   border-left: 1px solid #E3E3E3;
   color: #bababa;
   position: relative;
+  vertical-align: top;
 }
 
 .topMenu .topMenuBtn .icon {
@@ -1760,6 +1789,45 @@ input[type=range]::-ms-thumb {
 
 .topMenu .topMenuBtn:hover a {
   color: #F58220;
+}
+
+/* QUIT MODAL */
+.quitModal {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.quitModal .buttons {
+  text-align: right;
+  padding: 10px;
+}
+
+/* NOTIFICATION + QUIT MODALS */
+#notificationModal .modal-content, #quitModal .modal-content {
+  width: 50%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+#notificationModal .modal-content p, #quitModal .modal-content p {
+  padding: 20px;
+  text-align: center;
+}
+
+#notificationModal .modal-content div, #quitModal .modal-content div {
+  text-align: center;
+}
+
+/* LOGIN MODAL */
+#loginModal .modal-content {
+  width: 70%;
+  max-width: 700px;
+  min-width: 400px;
+}
+
+#loginModal .modal-content button {
+  width: 100%;
 }
 
 /* The Modal (background) */
@@ -1912,6 +1980,10 @@ input[type=range]::-ms-thumb {
 }
 
 /* links */
+.links a {
+  font-size: 12px;
+}
+
 .links .addLink {
   padding: 10px;
   text-align: center;
@@ -1931,6 +2003,10 @@ input[type=range]::-ms-thumb {
 }
 
 /* banners */
+.banners a {
+  font-size: 12px;
+}
+
 .banners .addBanner {
   padding: 10px;
   text-align: center;
@@ -2063,34 +2139,7 @@ select {
   color: #bababa;
 }
 
-/* responsive menu */
-@media (max-width: 767px) {
-  .topMenu {
-    top: 0;
-    right: 0;
-    height: 50px;
-  }
-  .topMenu .topMenuBtn {
-    top: 0;
-    height: 100%;
-  }
-  .topMenu .topMenuBtn .money {
-    margin: 0;
-  }
-  .unvisible-menu, .unvisible-sm {
-    display: none;
-  }
-  .mainBox {
-    left: 0;
-    width: 100%;
-  }
-  .links h3, .links a, .banners h3, .banners a, .personalData h3, .personalData a {
-    display: block;
-    text-align: center;
-  }
-}
-
-@media (max-width: 767px) and (max-width: 640px) {
+@media (max-width: 640px) {
   .payout .tableText {
     padding-left: 10%;
   }
@@ -2100,44 +2149,6 @@ select {
     display: inline-block;
     width: 40%;
   }
-}
-
-@media (max-width: 767px) {
-  /* ---- SLIDER ---- */
-  .quitModal {
-    width: 50%;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  .quitModal .buttons {
-    text-align: right;
-    padding: 10px;
-  }
-}
-
-#notificationModal .modal-content, #quitModal .modal-content {
-  width: 50%;
-  max-width: 400px;
-  min-width: 200px;
-}
-
-#notificationModal .modal-content p, #quitModal .modal-content p {
-  padding: 20px;
-  text-align: center;
-}
-
-#notificationModal .modal-content div, #quitModal .modal-content div {
-  text-align: center;
-}
-
-#loginModal .modal-content {
-  width: 70%;
-  max-width: 700px;
-  min-width: 400px;
-}
-
-#loginModal .modal-content button {
-  width: 100%;
 }
 
 /* ---- MESSENGER ----*/

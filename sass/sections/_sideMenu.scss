@@ -91,3 +91,31 @@
             }
         }
     }}
+
+
+
+/* responsive menu */ 
+@media(max-width: 767px) {
+    .topMenu {
+        top: 0;
+        right: 0;
+        height: 50px;
+        .topMenuBtn{
+            top: 0;
+            height: 100%;
+            .money {
+                margin: 0;
+    }}}
+
+    .unvisible-menu, .unvisible-sm {display: none;}
+    .mainBox {
+        left: 0;
+        width: 100%;
+    }
+    .links, .banners, .personalData {
+        h3, a {
+        display: block;
+            text-align: center;
+        }
+    }
+}
