@@ -863,7 +863,7 @@
 
 <div id="quitModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" id="quitModalClose">&times;</span>
             <p>Do you really want to quit?</p>
             <div class="buttons">
                 <button class="btn greyBtn" id="quitCancelBtn">Cancel</button>
@@ -876,7 +876,7 @@
 
 <div id="loginModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" id="loginModalClose">&times;</span>
             <h2>LOGIN</h2><hr>
             <div class="row inputForm">
                 <div class="col-4 col-md-4 col-sm-12"><input class="formInput" type="text" placeholder="login"></div>
@@ -891,10 +891,34 @@
 
 <div id="notificationModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" id="notificationModalClose">&times;</span>
             <h2>Notifications</h2><hr>
             <p>No alerts!</p>
             <div><button class="btn themeBtn" id="okayBtn">Okay</button></div>
+        </div>
+</div>
+
+<!-- MANAGER POP UP -->
+
+<div id="managerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="managerModalClose">&times;</span>
+            <h2>Online chat with your personal manager</h2><hr>
+            <div class="topRow">
+                <img src="images/guy.jpg" alt="">
+                <p>Michael E.</p><br>
+                <button>online</button><br>
+            </div>
+            <hr>
+            <div class="chat">
+                <p class="managerMsg">Hello. Can I help you?</p><br>
+                <p class="myMsg">Hello! I would like to know about Postback</p><br>
+                <p class="managerMsg">OK 5min..</p><br>
+            </div><hr>
+            <div class="bottomRow">
+                <input type="text" placeholder="Enter the message"></input>
+                <button class="btn themeBtn">Send</button>
+            </div>
         </div>
 </div>
 

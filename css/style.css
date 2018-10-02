@@ -1874,6 +1874,77 @@ input[type=range]::-ms-thumb {
   width: 100%;
 }
 
+/* MANAGER MODAL */
+#managerModal .modal-content {
+  width: 70%;
+}
+
+#managerModal .modal-content .topRow {
+  display: block;
+  height: 65px;
+}
+
+#managerModal .modal-content .topRow img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+#managerModal .modal-content .topRow p {
+  font-weight: bold;
+  float: left;
+  margin-left: 10px;
+}
+
+#managerModal .modal-content .topRow button {
+  font-size: 10px;
+  background: #04AE00;
+  font-family: "Open Sans";
+  color: white;
+  border: 0;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+#managerModal .modal-content .topRow button:hover {
+  background: #F58220;
+}
+
+#managerModal .modal-content .chat p {
+  font-size: 12px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+#managerModal .modal-content .chat .managerMsg {
+  background: #E3E3E3;
+}
+
+#managerModal .modal-content .chat .myMsg {
+  background: #282828;
+  color: white;
+}
+
+#managerModal .modal-content .bottomRow input {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  font-family: "Open Sans";
+  margin: 5px 0;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid #E3E3E3;
+}
+
+#managerModal .modal-content .bottomRow button {
+  width: 15%;
+  margin: 5px;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
