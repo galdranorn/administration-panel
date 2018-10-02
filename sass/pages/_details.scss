@@ -1,4 +1,15 @@
 .details {
+    .topRow {
+        text-align: center;
+        .inputDateBox {display: inline-block;}
+        button {
+            svg {
+                fill: white;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
     .container {
         margin: 0;
     }

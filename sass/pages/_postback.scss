@@ -1,0 +1,30 @@
+.postback {
+
+    /*inputs*/
+    input, textarea {
+        font-family: $brandFont;
+    }
+
+    /*checkboxes */
+    .statuses {
+        height: 100px;
+        overflow-y: auto;
+    .checkboxLine {
+        padding: 6px 0 0 35px;
+    input:checked ~ .checkmark {
+        background-color: red;
+        border-color: red;}
+    .checkmark:hover {background-color: $lightNegativeNot;}
+
+    /* slider */
+    .rangeSlider {
+        padding: 20px;
+        .start {float: left;}
+        .end {float: right;}
+    }
+
+
+}
+}
+}
+

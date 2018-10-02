@@ -1393,6 +1393,15 @@ a:hover {
   margin-top: 4px;
 }
 
+/* select */
+select {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #E3E3E3;
+  font-family: Open Sans;
+  color: #bababa;
+}
+
 /* ---- COLOR TABS ---- */
 .tabBtn {
   color: #979797;
@@ -2070,22 +2079,23 @@ input[type=range]::-ms-thumb {
 
 /* Pages */
 /* general statistics */
-.generalStatistics .inputDateBox {
-  margin: 20px auto;
+.generalStatistics .topRow {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.generalStatistics .topRow .inputDateBox {
+  display: inline-block;
+}
+
+.generalStatistics .topRow button svg {
+  fill: white;
+  width: 15px;
+  height: 15px;
 }
 
 .generalStatistics .tableWithDigit {
   margin: 20px auto;
-}
-
-.generalStatistics .chart {
-  text-align: center;
-}
-
-.generalStatistics .chart img {
-  width: 100%;
-  max-width: 690px;
-  height: auto;
 }
 
 .generalStatistics .tabs {
@@ -2174,6 +2184,20 @@ input[type=range]::-ms-thumb {
 }
 
 /* PAYOUT */
+.payout .topRow {
+  text-align: center;
+}
+
+.payout .topRow .inputDateBox {
+  display: inline-block;
+}
+
+.payout .topRow button svg {
+  fill: white;
+  width: 15px;
+  height: 15px;
+}
+
 .payout .inputDateBox {
   text-align: center;
   margin: 20px auto;
@@ -2194,6 +2218,32 @@ input[type=range]::-ms-thumb {
 .payout .pagination {
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 640px) {
+  .payout .tableText {
+    padding-left: 10%;
+  }
+  .payout .tableText .visible-sm {
+    font-weight: bold;
+    color: #E3E3E3;
+    display: inline-block;
+    width: 40%;
+  }
+}
+
+.details .topRow {
+  text-align: center;
+}
+
+.details .topRow .inputDateBox {
+  display: inline-block;
+}
+
+.details .topRow button svg {
+  fill: white;
+  width: 15px;
+  height: 15px;
 }
 
 .details .container {
@@ -2230,21 +2280,23 @@ input[type=range]::-ms-thumb {
   text-align: center;
 }
 
-.unvisible {
-  display: none;
+.postback {
+  /*inputs*/
+  /*checkboxes */
 }
 
-.visible-sm {
-  display: none;
+.postback input, .postback textarea {
+  font-family: "Open Sans";
 }
 
 .postback .statuses {
   height: 100px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .postback .statuses .checkboxLine {
   padding: 6px 0 0 35px;
+  /* slider */
 }
 
 .postback .statuses .checkboxLine input:checked ~ .checkmark {
@@ -2256,26 +2308,23 @@ input[type=range]::-ms-thumb {
   background-color: #EC7171;
 }
 
-/* select */
-select {
-  width: 100%;
-  height: 38px;
-  border: 1px solid #E3E3E3;
-  font-family: Open Sans;
-  color: #bababa;
+.postback .statuses .checkboxLine .rangeSlider {
+  padding: 20px;
 }
 
-@media (max-width: 640px) {
-  .payout .tableText {
-    padding-left: 10%;
-  }
-  .payout .tableText .visible-sm {
-    font-weight: bold;
-    color: #E3E3E3;
-    display: inline-block;
-    width: 40%;
-  }
+.postback .statuses .checkboxLine .rangeSlider .start {
+  float: left;
 }
 
-/* ---- MESSENGER ----*/
+.postback .statuses .checkboxLine .rangeSlider .end {
+  float: right;
+}
+
+.unvisible {
+  display: none;
+}
+
+.visible-sm {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

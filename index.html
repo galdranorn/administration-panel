@@ -138,15 +138,24 @@
 <!-- DASHBOARD - STATISTICS -->                
                     <div class="smallBox generalStatistics" id="statistics">
                         <h2>General statistics</h2><hr>
-<!-- input date box -->                        
-                        <div class="inputDateBox">
-                            <div>
-                                <input type="date" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-                                <span class ="separator">|</span>
-                                <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
-                                <i class="far fa-calendar-alt"></i>
-                            </div>
-                        </div> 
+<!-- input date box --> 
+                        <div class="topRow">
+                            <div class="inputDateBox">
+                                <div>
+                                    <input type="date" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                                    <span class ="separator">|</span>
+                                    <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+                            </div> 
+                            <button class="btn themeBtn">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
+                                    <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
+                                l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+                                </svg>
+                            </button>
+                        </div>
                         <hr>
 <!-- table with digits -->
                         <div class="container">
@@ -183,7 +192,8 @@
                                 <button class="btn tabBtn activeTabBtn"><span class="dot earned"></span>Earned</button>
                             </div>
                             <div class="chart">
-                                <img src="images/chart.png" alt="">
+                                <canvas id="myChart"></canvas>
+                                <!--<img src="images/chart.png" alt="">-->
                             </div>
                         </div>
                     </div>
@@ -359,12 +369,24 @@
             <section class="payout unvisible" id="payout">
                 <div class="smallBox">
                     <h2>Payout history</h2><hr>
-                    <div class="inputDateBox">
-                        <input type="date" id="start" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-                        <span class ="separator">|</span>
-                        <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
-                        <span class="far fa-calendar-alt"></span>
-                    </div> 
+                    <div class="topRow">
+                            <div class="inputDateBox">
+                                <div>
+                                    <input type="date" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                                    <span class ="separator">|</span>
+                                    <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+                            </div> 
+                            <button class="btn themeBtn">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
+                                    <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
+                                l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <hr> 
 <!-- table with data -->
                     <div>
                         <table id="payoutTable">
@@ -454,12 +476,24 @@
     <div class="smallBox">
         <h2>DETAILS</h2><hr>
 <!-- input date box -->        
+<div class="topRow">
         <div class="inputDateBox">
-            <input type="date" id="start" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-            <span class ="separator">|</span>
-            <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
-            <span class="far fa-calendar-alt"></span>
+            <div>
+                <input type="date" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                <span class ="separator">|</span>
+                <input  class="border" type="date" id="end" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
+                <i class="far fa-calendar-alt"></i>
+            </div>
         </div> 
+        <button class="btn themeBtn">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
+                <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
+            l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+            </svg>
+        </button>
+    </div>
+    <hr> 
 
 <!-- table with data -->
         <div class="tableWrapper">
@@ -649,7 +683,9 @@
                             <label class="checkboxLine">noData<input type="checkbox"><span class="checkmark"></span></label><br>
                         </div>
                     </div>
-                    <div class="col-6 col-md-6 col-sm-12">
+                    <div class="col-6 col-md-6 col-sm-12 rangeSlider">
+                        <span class="start">10</span>
+                        <span class="end">10K</span>
                         <input type="range" min="10" max="100000" step="10">
                     </div>
                 </div>
@@ -924,7 +960,7 @@
 
 <!-- SECTION FOR CONTENTS FINISHES -->
         </div>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="node_modules/js-datepicker/datepicker.js"></script>
         <script src="js/sideMenuMobile.js"></script>
         <script src="js/switchPages.js"></script>

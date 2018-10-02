@@ -26,48 +26,10 @@
 @import "pages/personalData";
 @import "pages/payout";
 @import "pages/details";
+@import "pages/postback";
 
 
 .unvisible {display: none;}
 .visible-sm {display: none;}
 
-.postback {
-    .statuses {
-        height: 100px;
-        overflow-y: scroll;
-    .checkboxLine {
-        padding: 6px 0 0 35px;
-    input:checked ~ .checkmark {
-        background-color: red;
-        border-color: red;}
-    .checkmark:hover {background-color: $lightNegativeNot;}
-}
-}
-}
 
-/* select */
-
-select {
-    width: 100%;
-    height: 38px;
-    border: 1px solid $grey2;
-    font-family: Open Sans;
-    color: $greyButtonHov;
-}
-
-@media(max-width: 640px) {
-.payout {
-    .tableText {
-        padding-left: 10%;
-        .visible-sm {
-            font-weight: bold;
-            color: $grey2;
-            display: inline-block;
-            width: 40%;
-        }
-    }
-}
-}
-
-
-/* ---- MESSENGER ----*/

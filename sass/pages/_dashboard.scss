@@ -1,14 +1,19 @@
 /* general statistics */
 .generalStatistics {
-    .inputDateBox {margin: 20px auto;}
-	.tableWithDigit {margin: 20px auto;}
-    .chart {text-align: center; 
-        img {
-            width: 100%; 
-            max-width: 690px;
-            height: auto;
+    .topRow {
+        text-align: center;
+        padding: 20px 0;
+        .inputDateBox {display: inline-block;}
+        button {
+            svg {
+                fill: white;
+                width: 15px;
+                height: 15px;
+            }
         }
     }
+
+	.tableWithDigit {margin: 20px auto;}
     .tabs {
         margin: 20px auto;
         text-align: center;

@@ -2,6 +2,17 @@
 /* PAYOUT */
 
 .payout {
+    .topRow {
+        text-align: center;
+        .inputDateBox {display: inline-block;}
+        button {
+            svg {
+                fill: white;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
     .inputDateBox {
         text-align: center;
         margin: 20px auto;
@@ -22,3 +33,17 @@
     }
     
 }
+
+@media(max-width: 640px) {
+    .payout {
+        .tableText {
+            padding-left: 10%;
+            .visible-sm {
+                font-weight: bold;
+                color: $grey2;
+                display: inline-block;
+                width: 40%;
+            }
+        }
+    }
+    }
