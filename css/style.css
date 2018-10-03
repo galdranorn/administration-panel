@@ -2019,6 +2019,17 @@ input[type=range]::-ms-thumb {
 
 .modal .bottomRow .buttons .disabledBtn {
   width: 55%;
+  padding-left: 30px;
+  position: relative;
+}
+
+.modal .bottomRow .buttons .disabledBtn svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
 }
 
 .modal .bottomRow .buttons .themeBtn {
