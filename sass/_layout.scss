@@ -14,25 +14,22 @@ body {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-  }
-  
-  .container-fluid {
+  &-fluid {
 	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
-  }
+	}
+}
 
 /* GRID */
 .row {
 	display: flex;
 	flex-wrap: wrap;
-  }
-
-
-.row::before, .row::after {
-	content: "";
-	display: table;
-	clear: both;
+	&::before, &::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
 [class*="col-"] {

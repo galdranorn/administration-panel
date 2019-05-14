@@ -34,9 +34,9 @@
   "homepage": "https://github.com/galdranorn/learning-git#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.26.5",
     "globstar": "^1.0.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.12.0",
     "nu-html-checker": "^0.1.0",
     "onchange": "^4.1.0"
   },
